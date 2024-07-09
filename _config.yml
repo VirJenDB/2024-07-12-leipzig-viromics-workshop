@@ -6,7 +6,7 @@
 # swc: Software Carpentry
 # dc: Data Carpentry
 # lc: Library Carpentry
-# cp: Carpentries (to use for instructor traning for instance)
+# cp: Carpentries (to use for instructor training for instance)
 # incubator: Carpentries Incubator
 carpentry: "swc"
 
@@ -47,8 +47,8 @@ email: "team@carpentries.org"
 # swc_site: "https://software-carpentry.org"
 # template_repo: "https://github.com/carpentries/styles"
 # training_site: "https://carpentries.github.io/instructor-training"
-workshop_repo: "https://github.com/MGXlab/Viromics-Workshop-2022"
-workshop_site: "https://mgxlab.github.io/Viromics-Workshop-MGX/"
+workshop_repo: "https://github.com/VirJenDB/2024-07-12-leipzig-viromics-workshop"
+workshop_site: "https://VirJenDB.github.io/2024-07-12-leipzig-viromics-workshop/"
 # cc_by_human: "https://creativecommons.org/licenses/by/4.0/"
 
 # Surveys.
