@@ -10,6 +10,7 @@ permalink: index.html  # Is the only page that doesn't follow the pattern /:path
 12 July 2024  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 9:45 AM - 5:00 PM CEST
 
 **Instructors:** Noriko Cassman, Shahram Saghaei
+
 **Helpers:** Shahram Saghaei, [Martin Bole](mailto:martin.bole@ufz.de), [Jonas Kasmanas](mailto:jonas.kasmanas@ufz.de)
 
 ---
