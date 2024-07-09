@@ -1,5 +1,5 @@
 ---
-start: True
+start: 9:45
 title: "Introduction"
 teaching: 15
 exercises: 0
