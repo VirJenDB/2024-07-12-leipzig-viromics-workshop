@@ -33,16 +33,6 @@ We are dedicated to providing a positive and accessible learning environment for
 
 ---
 
-## Surveys
-
-Please be sure to complete these surveys before and after the workshop.
-
-[Pre-workshop Survey](https://example.com/pre-survey)
-
-[Post-workshop Survey](https://example.com/post-survey)
-
----
-
 ## Setup
 
 To participate in a Data Carpentry workshop, you will need access to software as described below. In addition, you will need an up-to-date web browser.
