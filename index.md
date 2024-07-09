@@ -19,7 +19,7 @@ permalink: index.html  # Is the only page that doesn't follow the pattern /:path
 
 **Who:** The course is aimed at graduate students and other researchers. *You don't need to have any previous knowledge of the tools that will be presented at the workshop.*
 
-**Where:** Permoserstraße 15, 04318 Leipzig. Get directions with [OpenStreetMap](https://www.openstreetmap.org/) or [Google Maps](https://maps.google.com).
+**Where:** Permoserstraße 15, 04318 Leipzig. Get directions with [OpenStreetMap](https://www.openstreetmap.org/) or [Google Maps](https://www.google.com/maps/place/Helmholtz+Centre+for+Environmental+Research+-+UFZ/@51.3517518,12.4283362,17z/data=!3m1!4b1!4m6!3m5!1s0x47a6f87d03650915:0xccdff15106b0098e!8m2!3d51.3517518!4d12.4309111!16s%2Fm%2F049t2kx?entry=ttu).
 
 **When:** 12 July 2024; 9:45 AM - 5:00 PM CEST [Add to your Google Calendar](https://calendar.google.com/).
 
@@ -35,7 +35,7 @@ We are dedicated to providing a positive and accessible learning environment for
 
 ## Setup
 
-To participate in a Data Carpentry workshop, you will need access to software as described below. In addition, you will need an up-to-date web browser.
+To participate in a Practical part of this workshop, you will need access to software as described below. 
 
 We maintain a list of common issues that occur during installation as a reference for instructors that may be useful on the [Configuration Problems and Solutions wiki page](https://example.com/wiki).
 
