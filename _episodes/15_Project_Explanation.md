@@ -1,6 +1,6 @@
 ---
 title: "Project Explanation"
-teaching: 30
+teaching: 90
 exercises: 
 questions:
 - ""
