@@ -26,10 +26,8 @@ permalink: index.html  # Is the only page that doesn't follow the pattern /:path
 **Requirements:** Participants must bring a laptop with a Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges on. They should have a few specific software packages installed (listed below).
 
 **Accessibility:** We are committed to making this workshop accessible to everybody. The workshop organizers have checked that:
-- The room is wheelchair / scooter accessible.
+- The room is wheelchair/scooter accessible.
 - Accessible restrooms are available.
-
-We are dedicated to providing a positive and accessible learning environment for all. We do not require participants to provide documentation of disabilities or disclose any unnecessary personal information. However, we do want to help create an inclusive, accessible experience for all participants. We encourage you to share any information that would be helpful to make your Carpentries experience accessible. To request an accommodation for this workshop, please fill out the [accommodation request form](https://example.com). If you have questions or need assistance with the accommodation form please [email us](mailto:email@example.com).
 
 We are dedicated to providing a positive and accessible learning environment for all. We do not require participants to provide documentation of disabilities or disclose any unnecessary personal information. However, we do want to help create an inclusive, accessible experience for all participants. We encourage you to share any information that would be helpful to make your Carpentries experience accessible. To request an accommodation for this workshop, please fill out the [accommodation request form](https://example.com). If you have questions or need assistance with the accommodation form please [email us](mailto:email@example.com).
 
