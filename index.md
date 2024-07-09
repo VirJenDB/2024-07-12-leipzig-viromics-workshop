@@ -4,8 +4,8 @@ root: .  # Is the only page that doesn't follow the pattern /:path/index.html
 permalink: index.html  # Is the only page that doesn't follow the pattern /:path/index.html
 ---
 
-Welcome to the **2024 Leipzig Summer School, Day 5** workshop.
 
+> Welcome to the **2024 Leipzig Summer School, Day 5** workshop.
 ### Helmholtz Centre for Environmental Research
 12 July 2024  &nbsp;&nbsp; 9:45 AM - 5:00 PM CEST
 
