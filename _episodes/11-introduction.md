@@ -1,6 +1,6 @@
 ---
 title: "Listen to Assembly lecture"
-teaching: 45
+teaching: 15
 exercises: 0
 questions:
 
