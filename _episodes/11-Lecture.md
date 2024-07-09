@@ -1,6 +1,6 @@
 ---
-title: "Listen to Assembly lecture"
-teaching: 15
+title: "Lecture on Viruses and -omics Techniques"
+teaching: 45
 exercises: 0
 questions:
 
