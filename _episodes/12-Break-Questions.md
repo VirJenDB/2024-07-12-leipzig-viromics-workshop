@@ -1,6 +1,6 @@
 ---
-title: "Lunch break"
-teaching: 55
+title: "Break and Questions"
+teaching: 30
 exercises: 0
 questions:
 
