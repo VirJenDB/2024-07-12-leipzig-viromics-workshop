@@ -43,24 +43,6 @@ Please be sure to complete these surveys before and after the workshop.
 
 ---
 
-## Schedule
-
-### Day 1
-
-| Time            | Activity                                    |
-|-----------------|---------------------------------------------|
-| Before starting | [Pre-workshop survey](https://example.com)  |
-| 09:45 - 10:00   | Introduction                                |
-| 10:00 - 10:45   | Lecture on Viruses and -omics Techniques    |
-| 10:45 - 11:15   | Break/Questions                             |
-| 11:15 - 12:00   | Lecture on RDM and Virus Infrastructure     |
-| 12:00 - 13:30   | Lunch Break                                 |
-| 13:30 - 14:00   | Project Explanation                         |
-| 14:00 - 16:30   | Workshop Projects, Break as Needed          |
-| 16:30 - 17:00   | Wrap Up                                     |
-
----
-
 ## Setup
 
 To participate in a Data Carpentry workshop, you will need access to software as described below. In addition, you will need an up-to-date web browser.
