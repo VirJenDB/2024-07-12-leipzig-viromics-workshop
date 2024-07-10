@@ -38,3 +38,9 @@ We maintain a list of common issues that occur during installation as a referenc
 The setup instructions for the workshop can be found at the [workshop overview site](https://example.com/overview).
 
 {% include links.md %}
+
+---
+
+## Disclaimer
+
+This workshop uses the workshop template of the Carpentries, but is not part of the official Carpentries curriculum. In addition, part of this workshop has been modified from the Viromics Workshop (https://mgxlab.github.io/Viromics-Workshop-MGX) by the Virus Ecology Group of the Microverse (https://www.bio.uni-jena.de/en/2235/viral-ecology-and-omics).
