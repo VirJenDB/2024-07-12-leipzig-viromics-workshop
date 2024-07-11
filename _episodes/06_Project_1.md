@@ -77,7 +77,7 @@ The list of the curl commands are stored in [PRJNA646773_fastq_download.sh](http
 
 ```bash
 # Create a new directory "PRJNA646773" within "workshop" directory
-mkir workshop && cd workshop && mkdir PRJNA646773
+mkdir workshop && cd workshop && mkdir PRJNA646773
 
 # Download "PRJNA646773_fastq_download.sh" bash script file  
 wget -O PRJNA646773_fastq_download.sh https://raw.githubusercontent.com/VirJenDB/2024-07-12-leipzig-viromics-workshop/f38c57fe435c149f8210d2e9c46cf1d34f85fd91/rawfiles/dataset/PRJNA646773_fastq_download.sh
@@ -92,9 +92,8 @@ chmod +x PRJNA646773_fastq_download.sh
 
 <div>
     <ul class="nav nav-tabs" role="tablist">
-      <li role="presentation" class=""><a data-os="windows" href="#shell-windows" aria-controls="Windows" role="tab" data-toggle="tab">Windows</a></li>
-      <li role="presentation" class=""><a data-os="macos" href="#shell-macos" aria-controls="MacOS" role="tab" data-toggle="tab">MacOS</a></li>
-      <li role="presentation" class="active"><a data-os="linux" href="#shell-linux" aria-controls="Linux" role="tab" data-toggle="tab">Linux</a></li>
+      <li role="presentation" class=""><a data-os="windows" href="#shell-windows" aria-controls="Windows" role="tab" data-toggle="tab">WGET</a></li>
+      <li role="presentation" class=""><a data-os="macos" href="#shell-macos" aria-controls="MacOS" role="tab" data-toggle="tab">CURL</a></li>
     </ul>
 
     <div class="tab-content">
@@ -104,138 +103,19 @@ chmod +x PRJNA646773_fastq_download.sh
           <li>Run the installer and follow the steps below:
             <ol>
               
-              <li>
-                Click on "Next" four times (two times if you've previously
-                installed Git).  You don't need to change anything
-                in the Information, location, components, and start menu screens.
-              </li>
-              <li>
-                <strong>
-                  From the dropdown menu, "Choosing the default editor used by Git", select "Use the Nano editor by default" (NOTE: you will need to scroll <emph>up</emph> to find it) and click on "Next".
-                </strong>
-              </li>
-              
-              <li>
-                On the page that says "Adjusting the name of the initial branch in new repositories", ensure that
-		"Let Git decide" is selected. This will ensure the highest level of compatibility for our lessons.
-		     
-              </li>
-              
-              <li>
-                Ensure that "Git from the command line and also from 3rd-party software" is selected and
-                click on "Next". (If you don't do this Git Bash will not work properly, requiring you to
-                remove the Git Bash installation, re-run the installer and to select the "Git from the
-                command line and also from 3rd-party software" option.)
-              </li>
-              
- 	      <li>
-	      Select "Use bundled OpenSSH".
-	      </li>
-              
-              <li>
-		Ensure that "Use the native Windows Secure Channel Library" is selected and click on "Next".
-	      </li>
-              
-              
-              <li>
-                Ensure that "Checkout Windows-style, commit Unix-style line endings" is selected and click on "Next".
-              </li>
-              
-              <li>
-                <strong>
-                  Ensure that "Use Windows' default console window" is selected and click on "Next".
-                </strong>
-              </li>
-              
-              <li>
-		Ensure that "Default (fast-forward or merge) is selected and click "Next"
-              </li>
-              <li>
-		Ensure that "Git Credential Manager" is selected and click on "Next".
-              </li>
-              <li>
-		Ensure that "Enable file system caching" is selected and click on "Next".
-              </li>
-              
               <li>Click on "Install".</li>
-              
+                Create a new directory "PRJNA646773" within "workshop" directory
+		<code>mkdir workshop && cd workshop && mkdir PRJNA646773</code>
               
               
               <li>Click on "Finish" or "Next".</li>
             </ol>
           </li>
-          <li>
-            If your "HOME" environment variable is not set (or you don't know what this is):
-            <ol>
-              <li>Open command prompt (Open Start Menu then type <code>cmd</code> and press <kbd>Enter</kbd>)</li>
-              <li>
-                Type the following line into the command prompt window exactly as shown:
-                <p><code>setx HOME "%USERPROFILE%"</code></p>
-              </li>
-              <li>Press <kbd>Enter</kbd>, you should see <code>SUCCESS: Specified value was saved.</code></li>
-              <li>Quit command prompt by typing <code>exit</code> then pressing <kbd>Enter</kbd></li>
-            </ol>
-	  </li>
-        </ol>
-        <p>This will provide you with both Git and Bash in the Git Bash program.</p>
-        <h4 id="video-tutorial">Video Tutorial<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="#video-tutorial" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
-        <div class="yt-wrapper2">
-        <div class="yt-wrapper">
-        <p>Looks like your adblocker blocked the registration window. Please navigate to <a href="https://www.eventbrite.com/tickets-external?eid=&amp;ref=etckt">https://www.eventbrite.com/tickets-external?eid=&amp;ref=etckt</a> to register.</p><iframe type="text/html" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" src="https://www.youtube-nocookie.com/embed/339AEqk9c-8?modestbranding=1&amp;playsinline=1&amp;iv_load_policy=3&amp;rel=0" class="yt-frame" allowfullscreen=""></iframe>
-        </div>
-        </div>
       </article>
       <article role="tabpanel" class="tab-pane" id="shell-macos">
         <p>
-          The default shell in Mac OS X Ventura and newer versions is Zsh, but
-	  Bash is available in all versions, so no need to install anything.
-	  You access Bash from the Terminal (found in
-	  <code>/Applications/Utilities</code>).
-          See the Git installation <a href="#shell-macos-video-tutorial">video tutorial</a>
-          for an example on how to open the Terminal.
-          You may want to keep Terminal in your dock for this workshop.
-        </p>
-        <p>
-            To see if your default shell is Bash type <code>echo $SHELL</code>
-            in Terminal and press the <kbd>Return</kbd> key. If the message
-            printed does not end with '/bash' then your default is something
-            else, you can change your current shell to Bash by typing
-            <code>bash</code> and then pressing  <kbd>Return</kbd>. To check
-            your current shell type <code>echo $0</code> and press <kbd>Return</kbd>.
-        </p>
-        <p>
-          To change your default shell to Bash type <code>chsh -s /bin/bash</code> and
-          press the <kbd>Return</kbd> key, then reboot for the change to take effect. To
-          change your default back to Zsh, type <code>chsh -s /bin/zsh</code>, press the
-          <kbd>Return</kbd> key and reboot.  To check available shells, type
-          <code>cat /etc/shells</code>.
-        </p>
-        <h4 id="shell-macos-video-tutorial">Video Tutorial<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="#shell-macos-video-tutorial" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
-        <div class="yt-wrapper2">
-        <div class="yt-wrapper">
-        <p>Looks like your adblocker blocked the registration window. Please navigate to <a href="https://www.eventbrite.com/tickets-external?eid=&amp;ref=etckt">https://www.eventbrite.com/tickets-external?eid=&amp;ref=etckt</a> to register.</p><iframe type="text/html" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" src="https://www.youtube-nocookie.com/embed/9LQhwETCdwY?modestbranding=1&amp;playsinline=1&amp;iv_load_policy=3&amp;rel=0" class="yt-frame" allowfullscreen=""></iframe>
-        </div>
-        </div>
-      </article>
-      <article role="tabpanel" class="tab-pane active" id="shell-linux">
-        <p>
           The default shell is usually Bash and there is usually no need to
           install anything.
-        </p>
-        <p>
-            To see if your default shell is Bash type <code>echo $SHELL</code>
-            in Terminal and press the <kbd>Return</kbd> key. If the message
-            printed does not end with '/bash' then your default is something
-            else, you can change your current shell to Bash by typing
-            <code>bash</code> and then pressing  <kbd>Return</kbd>. To check
-            your current shell type <code>echo $0</code> and press <kbd>Return</kbd>.
-        </p>
-        <p>
-          To change your default shell to Bash type <code>chsh -s /bin/bash</code> and
-          press the <kbd>Return</kbd> key, then reboot for the change to take effect. To
-          change your default back to Zsh, type <code>chsh -s /bin/zsh</code>, press the
-          <kbd>Return</kbd> key and reboot.  To check available shells, type
-          <code>cat /etc/shells</code>.
         </p>
       </article>
     </div>
