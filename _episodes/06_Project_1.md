@@ -73,19 +73,19 @@ The list of the curl commands are stored in [PRJNA646773_fastq_download.sh](http
 
 ```bash
 # Create a new directory "PRJNA646773" within "workshop" directory
-mkdir workshop && cd workshop && mkdir PRJNA646773
+mkdir workshop && mkdir workshop/PRJNA646773
 
 # Download "PRJNA646773_fastq_download.sh" bash script file, if you are using wget  
-wget -O PRJNA646773_fastq_download.sh https://raw.githubusercontent.com/VirJenDB/2024-07-12-leipzig-viromics-workshop/f38c57fe435c149f8210d2e9c46cf1d34f85fd91/rawfiles/dataset/PRJNA646773_fastq_download.sh
+wget -O workshop/PRJNA646773/PRJNA646773_fastq_download.sh https://raw.githubusercontent.com/VirJenDB/2024-07-12-leipzig-viromics-workshop/f38c57fe435c149f8210d2e9c46cf1d34f85fd91/rawfiles/dataset/PRJNA646773_fastq_download.sh
 
 # Download "PRJNA646773_fastq_download.sh" bash script file, if you are using curl
-curl -L https://raw.githubusercontent.com/VirJenDB/2024-07-12-leipzig-viromics-workshop/f38c57fe435c149f8210d2e9c46cf1d34f85fd91/rawfiles/dataset/PRJNA646773_fastq_download.sh -o PRJNA646773_fastq_download.sh
+curl -L https://raw.githubusercontent.com/VirJenDB/2024-07-12-leipzig-viromics-workshop/f38c57fe435c149f8210d2e9c46cf1d34f85fd91/rawfiles/dataset/PRJNA646773_fastq_download.sh -o workshop/PRJNA646773/PRJNA646773_fastq_download.sh
 
 # Give the required permission to the script to be executed
-chmod +x PRJNA646773_fastq_download.sh
+chmod +x workshop/PRJNA646773/PRJNA646773_fastq_download.sh
 
 # Execute the script that will download 39 Datasets in the current directory 
-./PRJNA646773_fastq_download.sh
+./workshop/PRJNA646773/PRJNA646773_fastq_download.sh
  
 ```
 
@@ -93,11 +93,23 @@ chmod +x PRJNA646773_fastq_download.sh
 [Fastp](https://github.com/OpenGene/fastp?tab=readme-ov-file) is a fast all-in-one preprocessing tool for FASTQ files. Install the tool from [download page](https://github.com/OpenGene/fastp?tab=readme-ov-file#or-download-the-latest-prebuilt-binary-for-linux-users).
 Alternatively, you can install Fastp tool using conda `conda install bioconda::fastp`
 
+---
+Explanation of Main Options
+-i: Input file for read 1 (can be gzipped).
+-I: Input file for read 2 (paired-end, can be gzipped).
+-o: Output file for read 1 (can be gzipped).
+-O: Output file for read 2 (paired-end, can be gzipped).
+--html: Generate an HTML report.
+--json: Generate a JSON report.
+--thread: Number of threads to use.
+--length_required: Minimum length of reads to keep.
+---
+
 **Usage:**
 
 ```bash
 # Perform quality control on the input FASTQ file
-fastp -i input.fastq -o cleaned_output.fastq -h report.html -j report.json
+fastp -i input_R1.fastq.gz -I input_R2.fastq.gz -o output_R1.fastq.gz -O output_R2.fastq.gz --html report.html --json report.json --thread 4 --length_required 50
 ```
 
 Fastp not only performs quality filtering but also removes adapters and low-quality reads, producing a cleaned dataset ready for downstream analysis.
