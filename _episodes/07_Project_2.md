@@ -72,6 +72,12 @@ nextflow run nf-core/taxprofiler -profile test,YOURPROFILE --outdir nextflow
 
 ### Step 3: Run the nf-core:taxprofiler pipeline
 
+execution of the pipeline required multiple input files including samplesheet.csv and database.csv files.
+```
+# Create samplesheet.csv by listing the fastq files processed by fastp
+echo "sample,fastq_1,fastq_2" > samplesheet.csv && for f in fastp_output/*_1.fastq.gz; do base=$(basename $f _1.fastq.gz); echo "$base,fastp_output/${base}_1.fastq.gz,fastp_output/${base}_2.fastq.gz"; done >> samplesheet.csv
+```
+
 ---
 
 ## nf-core/taxprofiler Pipeline Parameters
