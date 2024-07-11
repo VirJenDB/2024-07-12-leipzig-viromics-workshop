@@ -29,6 +29,25 @@ To download the dataset from a BioProject there are [multiple tools](https://www
 <details>
 <summary>⚠️ Warning: Download Requirements</summary>
 
+~~~
+# deactivate the conda environment before running coconet
+$ conda deactivate
+
+# install coconet
+$ pip install --user coconet-binning
+
+# Run coconet. Don't forget to include your username in the command.
+$ /home/<USERNAME>/.local/bin/coconet run --output 3_binning ...
+~~
+{: .language-bash}
+
+> ## Binning parameters
+> CoCoNet incorporates the cutoffs `--min-ctg-len` (minimum length of the contigs)
+> and `--min-prevalence` (minimum number of samples containing a given contig). By
+> default, the first is set to 2048 nucleotides and the second to 2 samples.
+> __How increasing or decreasing these parameters would affect the results?__
+{: .discussion}
+
 To successfully download the required files, you need to have either `wget` or `curl` installed on your system. These tools are essential for fetching files from the internet.
 
 **Using `wget`:**
@@ -89,52 +108,6 @@ chmod +x PRJNA646773_fastq_download.sh
 ./PRJNA646773_fastq_download.sh
  
 ```
-
-{% raw %}
-<div class="container mt-3">
-    <ul class="nav nav-tabs" role="tablist">
-        <li class="nav-item">
-            <a class="nav-link active" id="wget-tab" data-bs-toggle="tab" href="#shell-windows" role="tab">WGET</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" id="curl-tab" data-bs-toggle="tab" href="#shell-macos" role="tab">CURL</a>
-        </li>
-    </ul>
-
-    <div class="tab-content">
-        <div class="tab-pane fade show active" id="shell-windows" role="tabpanel">
-            <p>Create a new directory "PRJNA646773" within "workshop" directory</p>
-            <pre><code class="bash">mkdir workshop && cd workshop && mkdir PRJNA646773</code></pre>
-
-            <p>Download "PRJNA646773_fastq_download.sh" bash script file</p>
-            <pre><code class="bash">wget -O PRJNA646773_fastq_download.sh https://raw.githubusercontent.com/VirJenDB/2024-07-12-leipzig-viromics-workshop/f38c57fe435c149f8210d2e9c46cf1d34f85fd91/rawfiles/dataset/PRJNA646773_fastq_download.sh</code></pre>
-
-            <p>Give the required permission to the script to be executed</p>
-            <pre><code class="bash">chmod +x PRJNA646773_fastq_download.sh</code></pre>
-
-            <p>Execute the script that will download 39 Datasets in the current directory</p>
-            <pre><code class="bash">./PRJNA646773_fastq_download.sh</code></pre>
-        </div>
-        <div class="tab-pane fade" id="shell-macos" role="tabpanel">
-            <p>Create a new directory "PRJNA646773" within "workshop" directory</p>
-            <pre><code class="bash">mkdir workshop && cd workshop && mkdir PRJNA646773</code></pre>
-
-            <p>Download "PRJNA646773_fastq_download.sh" bash script file</p>
-            <pre><code class="bash">curl -L https://raw.githubusercontent.com/VirJenDB/2024-07-12-leipzig-viromics-workshop/f38c57fe435c149f8210d2e9c46cf1d34f85fd91/rawfiles/dataset/PRJNA646773_fastq_download.sh -o PRJNA646773_fastq_download.sh</code></pre>
-
-            <p>Give the required permission to the script to be executed</p>
-            <pre><code class="bash">chmod +x PRJNA646773_fastq_download.sh</code></pre>
-
-            <p>Execute the script that will download 39 Datasets in the current directory</p>
-            <pre><code class="bash">./PRJNA646773_fastq_download.sh</code></pre>
-        </div>
-    </div>
-</div>
-{% endraw %}
-
-
-
-
 
 <style>
 /* Style the tab */
