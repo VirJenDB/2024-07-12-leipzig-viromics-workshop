@@ -90,6 +90,7 @@ chmod +x PRJNA646773_fastq_download.sh
  
 ```
 
+{% raw %}
 <div class="container mt-3">
     <ul class="nav nav-tabs" role="tablist">
         <li class="nav-item">
@@ -129,6 +130,10 @@ chmod +x PRJNA646773_fastq_download.sh
         </div>
     </div>
 </div>
+{% endraw %}
+
+
+
 
 
 <style>
