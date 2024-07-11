@@ -138,9 +138,9 @@ head -n 26 fastp_report/report.json
 
 ```bash
 # create a directory for FastQC output
-mkdir fastp_report fastp_output
+mkdir fastqc_report 
 # Run FastQC on the input FASTQ file
-fastqc input.fastq -o output_directory
+fastqc PRJNA646773/SRR8487027_DNA_of_soils_bulk_1.fastq.gz -o fastqc_report
 ```
 
 FastQC generates a detailed report on the quality of the sequencing data, including information on read length distribution, GC content, and the presence of adapters, which helps in identifying any potential issues before further analysis.
