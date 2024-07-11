@@ -18,13 +18,13 @@ keypoints:
 
 ### Step 1: Installation
 
-**Method 1: **
+**Method 1:**
 Install [Nextflow](https://www.nextflow.io/docs/latest/install.html#installation) from the  (>=22.10.1).
 
-**Method 2: **
+**Method 2:**
 Install [Docker Engine](https://docs.docker.com/engine/install/) using docker.
 
-**Method 3: **
+**Method 3:**
 Create a new conda environment and install nextflow:
 ```
 conda create -n workshop_nextflow -c bioconda nextflow 
