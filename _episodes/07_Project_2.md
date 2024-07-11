@@ -99,7 +99,8 @@ nextflow run nf-core/taxprofiler --input samplesheet.csv --databases database.cs
 
 This pipeline automates the process, running Kraken2 and other tools as part of a streamlined workflow.
 
-> ## Install Docker Engine on Ubuntu (Sudo privilege is required)
+> ## prerequisites
+> Install Docker Engine on Ubuntu (Sudo privilege is required)
 > Update the Package Index
 > `sudo apt-get update`
 > Install Required Packages
