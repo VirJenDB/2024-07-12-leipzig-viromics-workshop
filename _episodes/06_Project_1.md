@@ -81,8 +81,8 @@ rawfiles/dataset/PRJNA646773_fastq_download.sh
 mkir workshop && cd workshop && mkdir PRJNA646773
 
 # Download "PRJNA646773_fastq_download.sh" bash script file  
-wget -O PRJNA646773_fastq_download.sh [URL]
-
+wget -O PRJNA646773_fastq_download.sh https://raw.githubusercontent.com/VirJenDB/2024-07-12-leipzig-viromics-workshop/f38c57fe435c149f8210d2e9c46cf1d34f85fd91/rawfiles/dataset/PRJNA646773_fastq_download.sh
+curl -L https://raw.githubusercontent.com/VirJenDB/2024-07-12-leipzig-viromics-workshop/f38c57fe435c149f8210d2e9c46cf1d34f85fd91/rawfiles/dataset/PRJNA646773_fastq_download.sh -o PRJNA646773_fastq_download.sh
 # Give the required permission to the script to be executed
 chmod +x PRJNA646773_fastq_download.sh
 
