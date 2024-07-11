@@ -120,14 +120,14 @@ Fastp not only performs quality filtering but also removes adapters and low-qual
 **Check the outputs:**
 
 ```bash
-# If the fastp run finished successfully, there should be two report files in the fastp_report folder and two fastq files within the "fastp_output" folder. fastq files will be used in the next step.
+# If the FastP run finished successfully, there should be two report files in the fastp_report folder and two FASTQ files within the "fastp_output" folder. FASTQ files will be used in the next step.
 ls fastp_output/
 ls fastp_report/ 
 
-# To see fastq content, use zcat as they are compressed files
+# To see FASTQ content, use zcat as they are compressed files
 zcat fastp_output/SRR8487027_1.fastq.gz | head -n 10
  
-# To see the report, either use web browser to open fastp_report/report.html or use the head to read the first 26 lines of json file
+# To see the report, either use a web browser to open fastp_report/report.html or use the head to read the first 26 lines of json file
 head -n 26 fastp_report/report.json
 ```
 
@@ -137,6 +137,8 @@ head -n 26 fastp_report/report.json
 **Usage:**
 
 ```bash
+# create a directory for FastQC output
+mkdir fastp_report fastp_output
 # Run FastQC on the input FASTQ file
 fastqc input.fastq -o output_directory
 ```
