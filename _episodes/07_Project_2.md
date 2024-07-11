@@ -27,6 +27,7 @@ Create a new conda environment and install nextflow:
 conda create -n workshop_nextflow -c bioconda nextflow 
 conda activate workshop_nextflow`
 ```
+
 For other installation methods, please check [nf-core website](https://nf-co.re/taxprofiler/1.0.1/)
 
 ### Step 2: Download taxoprofiler pipeline
@@ -39,6 +40,20 @@ nextflow run nf-core/taxprofiler -profile test,YOURPROFILE --outdir <OUTDIR>
 ```
 
 ### Step 3: Run the nf-core:taxoprofiler pipeline
+
+---
+
+## nf-core/taxprofiler Pipeline Parameters
+
+| Parameter               | Description                                                                                   |
+|-------------------------|-----------------------------------------------------------------------------------------------|
+| `--input` `samplesheet.csv` | Specifies the CSV file with your sample information.                                         |
+| `--databases` `database.csv` | Specifies the CSV file with the list of databases.                                           |
+| `--outdir` `<OUTDIR>`   | The directory where the output files will be saved.                                           |
+| `--run_<TOOL1>`         | Include any specific tools or modules you want to run. Replace `<TOOL1>` with the actual tool names (e.g., `--run_blast`). |
+| `--run_<TOOL2>`         | Optionally include additional tools or modules.                                               |
+| `-profile` `<profile>`  | Specifies the execution profile (e.g., `docker`, `singularity`, `conda`, etc.).              |
+
 ```
 # Run the nf-core:taxoprofiler pipeline
 nextflow run nf-core/taxprofiler --input samplesheet.csv --databases database.csv --outdir <OUTDIR> --run_<TOOL1> --run_<TOOL1> -profile <docker/singularity/podman/shifter/charliecloud/conda/institute>
