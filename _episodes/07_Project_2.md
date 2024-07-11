@@ -38,6 +38,9 @@ Download taxoprofiler pipeline and test it on a minimal dataset with a single co
 
 In the following command, the name of the method used for the installation has been used as the "Profile" name. The profile name could be one of the docker, singularity, podman, shifter, charliecloud, and conda which instruct the pipeline to use the named tool for software management. For example if you used conda, ` -profile test,conda ` is the correct term.
 ```bash
+# Update nextflow to make sure it is the latest version
+nextflow self-update
+
 # Chain multiple config profiles in a comma-separated string
 nextflow run nf-core/taxprofiler -profile test,YOURPROFILE --outdir <OUTDIR>
 ```
