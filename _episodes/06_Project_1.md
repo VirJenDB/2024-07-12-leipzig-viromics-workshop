@@ -89,9 +89,9 @@ chmod +x PRJNA646773_fastq_download.sh
 ./PRJNA646773_fastq_download.sh
  
 ```
+
 ```bash
 ```
-<details>
 
 <div class="tabs">
   <button class="tablink" onclick="openTab(event, 'wgetcode')">wget</button>
@@ -179,7 +179,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
   document.querySelector('.tablink').click();
 });
 </script>
-</details>
 
 ### Step 2: Perform quality control using Fastp
 [Fastp](https://github.com/OpenGene/fastp?tab=readme-ov-file) is a fast all-in-one preprocessing tool for FASTQ files. Install the tool from [download page](https://github.com/OpenGene/fastp?tab=readme-ov-file#or-download-the-latest-prebuilt-binary-for-linux-users).
