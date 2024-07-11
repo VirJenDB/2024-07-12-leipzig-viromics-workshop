@@ -26,9 +26,6 @@ The aim of [project PRJNA646773](https://www.ncbi.nlm.nih.gov/bioproject/?term=P
 To download the dataset from a BioProject there are [multiple tools](https://www.ncbi.nlm.nih.gov/home/tools/) including Entrez Direct and SRA Toolkit that need to be installed on your system. Alternatively, we used [SRA Explorer](https://sra-explorer.info/#) online tool to find the list of FastQ files belonging to this BioProject within SRA FTP server. 
 
 
-<details>
-<summary>⚠️ Warning: Download Requirements</summary>
-
 ~~~
 # deactivate the conda environment before running coconet
 $ conda deactivate
@@ -42,54 +39,47 @@ $ /home/<USERNAME>/.local/bin/coconet run --output 3_binning ...
 {: .language-bash}
 
 > ## Binning parameters
-> CoCoNet incorporates the cutoffs `--min-ctg-len` (minimum length of the contigs)
-> and `--min-prevalence` (minimum number of samples containing a given contig). By
-> default, the first is set to 2048 nucleotides and the second to 2 samples.
-> __How increasing or decreasing these parameters would affect the results?__
+> To successfully download the required files, you need to have either `wget` or `curl` installed on your system. These tools are essential for fetching files from the internet.
+> **Using `wget`:**
+> - `wget` is a command-line utility for downloading files from the web. It supports HTTP, HTTPS, and FTP protocols.
+> - **Installation:**
+>  - **Linux (Debian/Ubuntu):**
+>    ```sh
+>    sudo apt-get install wget
+>    ```
+>  - **MacOS:**
+>    ```sh
+>    brew install wget
+>    ```
+>    (requires Homebrew)
+>
+> **Using `curl`:**
+> - `curl` is a command-line tool for transferring data using various network protocols, including HTTP, HTTPS, and FTP.
+> - **Installation:**
+>   - **Linux (Debian/Ubuntu):**
+>    ```sh
+>    sudo apt-get install curl
+>    ```
+>  - **MacOS:**
+>    ```sh
+>    brew install curl
+>    ```
+>    (requires Homebrew)
+>
+> **Example Usage:**
+>
+> - **wget:**
+>  ```sh
+>  wget http://example.com/file.zip
+>  ```
+> 
+> - **curl:**
+>  ```sh
+>  curl -O http://example.com/file.zip
+>  ```
+>
+> Ensure that you have one of these tools installed before proceeding with the download.
 {: .discussion}
-
-To successfully download the required files, you need to have either `wget` or `curl` installed on your system. These tools are essential for fetching files from the internet.
-
-**Using `wget`:**
-- `wget` is a command-line utility for downloading files from the web. It supports HTTP, HTTPS, and FTP protocols.
-- **Installation:**
-  - **Linux (Debian/Ubuntu):**
-    ```sh
-    sudo apt-get install wget
-    ```
-  - **MacOS:**
-    ```sh
-    brew install wget
-    ```
-    (requires Homebrew)
-
-**Using `curl`:**
-- `curl` is a command-line tool for transferring data using various network protocols, including HTTP, HTTPS, and FTP.
-- **Installation:**
-  - **Linux (Debian/Ubuntu):**
-    ```sh
-    sudo apt-get install curl
-    ```
-  - **MacOS:**
-    ```sh
-    brew install curl
-    ```
-    (requires Homebrew)
-
-**Example Usage:**
-
-- **wget:**
-  ```sh
-  wget http://example.com/file.zip
-  ```
- 
-- **curl:**
-  ```sh
-  curl -O http://example.com/file.zip
-  ```
-
-Ensure that you have one of these tools installed before proceeding with the download.
-</details>
 
 The list of the curl commands are stored in [PRJNA646773_fastq_download.sh](https://raw.githubusercontent.com/VirJenDB/2024-07-12-leipzig-viromics-workshop/f38c57fe435c149f8210d2e9c46cf1d34f85fd91/rawfiles/dataset/PRJNA646773_fastq_download.sh) bash script file. 
 
