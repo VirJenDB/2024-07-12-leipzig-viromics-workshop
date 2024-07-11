@@ -1,5 +1,5 @@
 ---
-title: "Lecture on Viruses and -omics Techniques"
+title: "Lecture on Viruses and viromics"
 teaching: 45
 exercises: 0
 questions:
