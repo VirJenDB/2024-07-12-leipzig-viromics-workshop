@@ -100,6 +100,15 @@ nextflow run nf-core/taxprofiler --input samplesheet.csv --databases database.cs
 This pipeline automates the process, running Kraken2 and other tools as part of a streamlined workflow.
 
 > ## prerequisites
+> To successfully download the required files, you need to have either `wget` or `curl` installed on your system. These tools are essential for fetching files from the internet.
+>
+> **Using `wget`:**
+> `wget` is a command-line utility for downloading files from the web. It supports HTTP, HTTPS, and FTP protocols.
+> - **Installation:**
+>   - **Linux (Debian/Ubuntu):**
+>   ```sh
+>   sudo apt-get install wget
+>   ```
 > Install Docker Engine on Ubuntu (Sudo privilege is required)
 > Update the Package Index
 > `sudo apt-get update`
