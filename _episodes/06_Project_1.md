@@ -1,5 +1,5 @@
 ---
-title: "Practical session part 1"
+title: "Exploring viromics resources and files"
 teaching: 
 exercises: 30
 questions:
