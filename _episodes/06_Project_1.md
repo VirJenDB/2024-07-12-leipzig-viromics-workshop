@@ -112,7 +112,8 @@ Alternatively, you can install Fastp tool using conda `conda install bioconda::f
 # Enter to the workshop day 5 folder
 cd workshop_day5 && mkdir fastp_report fastp_report
 # Perform quality control on the input FASTQ file
-fastp -i PRJNA646773/SRR8487027_DNA_of_soils_bulk_1.fastq.gz -I PRJNA646773/SRR8487027_DNA_of_soils_bulk_2.fastq.gz -o fastp_output/SRR8487027_1.fastq.gz -O fastp_output/SRR8487027_2.fastq.gz --html fastp_report/report.html --json fastp_report/report.json```
+fastp -i PRJNA646773/SRR8487027_DNA_of_soils_bulk_1.fastq.gz -I PRJNA646773/SRR8487027_DNA_of_soils_bulk_2.fastq.gz -o fastp_output/SRR8487027_1.fastq.gz -O fastp_output/SRR8487027_2.fastq.gz --html fastp_report/report.html --json fastp_report/report.json
+```
 
 Fastp not only performs quality filtering but also removes adapters and low-quality reads, producing a cleaned dataset ready for downstream analysis.
 
