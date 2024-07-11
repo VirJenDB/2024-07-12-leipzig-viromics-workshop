@@ -16,12 +16,15 @@ keypoints:
 ### Perform taxonomic profiling using Kraken2
 [Kraken2](https://ccb.jhu.edu/software/kraken2/) is a system for assigning taxonomic labels to short DNA sequences. [nf-core/taxprofiler](https://nf-co.re/taxprofiler/1.0.1/) is a bioinformatics best-practice analysis pipeline for taxonomic classification and profiling of shotgun metagenomic data. It allows for in-parallel taxonomic identification of reads or taxonomic abundance estimation with multiple classification and profiling tools against multiple databases and produces standardized output tables. 
 
-### Step 1: Installation:
- 
+### Step 1: Installation
+
+**Method 1: **
 Install [Nextflow](https://www.nextflow.io/docs/latest/install.html#installation) from the  (>=22.10.1).
 
+**Method 2: **
 Install [Docker Engine](https://docs.docker.com/engine/install/) using docker.
 
+**Method 3: **
 Create a new conda environment and install nextflow:
 ```
 conda create -n workshop_nextflow -c bioconda nextflow 
