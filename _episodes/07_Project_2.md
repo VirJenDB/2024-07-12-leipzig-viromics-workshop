@@ -24,6 +24,28 @@ Install [Nextflow](https://www.nextflow.io/docs/latest/install.html#installation
 **Method 2:**
 Install [Docker Engine](https://docs.docker.com/engine/install/) using docker.
 
+```
+curl -s https://get.nextflow.io | bash
+sudo mv nextflow /usr/local/bin/
+```
+
+If your user is not a sudoer, try a users local bin folder and add it to the PATH variable
+```
+# Create ~/bin Directory if It Does Not Exist
+mkdir -p ~/bin
+
+# Move the Nextflow Executable to ~/bin
+mv nextflow ~/bin/
+
+# Add ~/bin to Your PATH
+export PATH=$HOME/bin:$PATH
+
+# Then, reload your shell configuration:
+source ~/.bashrc
+```
+
+Test the installation of Nextflow using `nextflow -version`
+
 **Method 3:**
 Create a new conda environment and install nextflow:
 ```
