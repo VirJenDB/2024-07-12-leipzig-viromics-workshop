@@ -90,9 +90,6 @@ chmod +x PRJNA646773_fastq_download.sh
  
 ```
 
-```bash
-```
-
 <div class="tabs">
   <button class="tablink" onclick="openTab(event, 'wgetcode')">wget</button>
   <button class="tablink" onclick="openTab(event, 'curlcode')">curl</button>
