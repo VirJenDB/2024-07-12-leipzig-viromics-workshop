@@ -1,6 +1,6 @@
 ---
 title: "Lecture on Viruses and viromics"
-teaching: 45
+teaching: 30
 exercises: 0
 questions:
 
