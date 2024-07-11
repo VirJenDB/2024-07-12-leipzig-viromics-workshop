@@ -102,19 +102,18 @@ chmod +x PRJNA646773_fastq_download.sh
 
     <div class="tab-content">
         <div class="tab-pane fade show active" id="shell-windows" role="tabpanel">
-            <ol>
-                <li>Download the Git for Windows <a href="https://gitforwindows.org/">installer</a>.</li>
-                <li>Run the installer and follow the steps below:
-                    <ol>
-                        <li>Click on "Install".</li>
-                        <li>Create a new directory "PRJNA646773" within the "workshop" directory:
-                            <code>mkdir workshop && cd workshop && mkdir PRJNA646773</code>
-                        </li>
-                        <li>Click on "Finish" or "Next".</li>
-                    </ol>
-                </li>
-            </ol>
-        </div>
+            <p>Create a new directory "PRJNA646773" within "workshop" directory</p>
+            <pre><code class="bash">mkir workshop && cd workshop && mkdir PRJNA646773</code></pre>
+	    
+	    <p>Download "PRJNA646773_fastq_download.sh" bash script file</p>
+            <pre><code class="bash">wget -O PRJNA646773_fastq_download.sh https://raw.githubusercontent.com/VirJenDB/2024-07-12-leipzig-viromics-workshop/f38c57fe435c149f8210d2e9c46cf1d34f85fd91/rawfiles/dataset/PRJNA646773_fastq_download.sh</code></pre>
+
+            <p>Give the required permission to the script to be executed</p>
+            <pre><code class="bash">chmod +x PRJNA646773_fastq_download.sh</code></pre>
+
+            <p>Execute the script that will download 39 Datasets in the current directory</p>
+            <pre><code class="bash">./PRJNA646773_fastq_download.sh</code></pre>
+	</div>
 	<div class="tab-pane fade" id="shell-macos" role="tabpanel">
             <p>Here is a `bash` code example:</p>
             <pre><code class="bash">echo "This is a bash code example"</code></pre>
