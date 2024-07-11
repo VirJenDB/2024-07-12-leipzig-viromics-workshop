@@ -146,13 +146,14 @@ fastqc PRJNA646773/SRR8487027_DNA_of_soils_bulk_1.fastq.gz -o fastqc_report
 FastQC generates a detailed report on the quality of the sequencing data, including information on read length distribution, GC content, and the presence of adapters, which helps in identifying any potential issues before further analysis.
 
 ### Step 4: Create small files for use in the next steps using Seqtk
-Seqtk is a fast and lightweight tool for processing sequences in the FASTA/FASTQ format. Check the github page of [Seqtk](https://github.com/lh3/seqtk) to install of the tool.
+Seqtk is a fast and lightweight tool for processing sequences in the FASTA/FASTQ format. Check the GitHub page of [Seqtk](https://github.com/lh3/seqtk) to install of the tool. Alternatively, use `conda install bioconda::seqtk` to install Seqtk as a conda package.
 
 **Usage:**
 
 ```bash
 # Extract the first 1000 reads from a FASTQ file
-seqtk sample -s100 input.fastq 1000 > subset.fastq
+seqtk sample -s100 fastp_output/SRR8487027_1.fastq.gz 1000 > read1.fastq
+seqtk sample -s100 fastp_output/SRR8487027_2.fastq.gz 1000 > read2.fastq
 ```
 
 In this step, we use Seqtk to create a smaller subset of the data for initial exploration, which helps in quickly assessing the quality and content of the dataset without processing the entire file.
