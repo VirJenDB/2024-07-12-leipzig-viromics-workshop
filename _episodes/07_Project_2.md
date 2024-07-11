@@ -56,6 +56,7 @@ nextflow run nf-core/taxprofiler -profile test,YOURPROFILE --outdir <OUTDIR>
 | `--run_<TOOL1>`         | Include any specific tools or modules you want to run. Replace `<TOOL1>` with the actual tool names (e.g., `--run_blast`). |
 | `--run_<TOOL2>`         | Optionally include additional tools or modules.                                               |
 | `-profile` `<profile>`  | Specifies the execution profile (e.g., `docker`, `singularity`, `conda`, etc.).              |
+| `--cpus <INT> `         | Specifies the number of CPUs                                                                  |
 
 ```
 # Run the nf-core:taxoprofiler pipeline
