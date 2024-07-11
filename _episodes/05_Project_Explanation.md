@@ -40,12 +40,10 @@ Choose a dataset and explore it.
 
 Describe fastq and fasta file formats
 - What information is contained in sequencing files?
-Choose 2 (other than fasta) and describe
-How many files in your fastq files?
-How many sequences?
-Print the first 10 and last 10 in terminal
-Describe these lines
-What's the difference?
+- How many sequences are in your files?
+Print the first 10 and last 10 lines of your files in terminal
+- Describe these lines
+- What is different between the paired end files? What is the same?
 What is the GC content of your files?
 
 ## 2. Quality Control and Taxonomic Profiling
@@ -58,35 +56,25 @@ What is the GC content of your files?
 Sequencing Quality Questions
 
 Why do we need quality control?
-adapters and/or primers
-low quality ends
+- adapters and/or primers
+- low quality ends
 What is the impact of including low quality reads in downstream analyses?
-What are the metrics for assessing sequencing quality?
-For illumina
-phred scores
-read quality disribution
-for nanopore?
-read quality
-read lengths
-quality v. length
-Do we need to remove quality reads?
+What are the metrics for assessing sequencing quality for Illumina reads?
+-- phred scores
+-- read quality disribution
 
-## 3. Virome Assembly and Bin Evaluation
-### Tools: MetaSPAdes, (Binning tool), CheckV
+## 3. Binning and Evaluation
+### Tools: MaxBin2, CheckV
 
-- **MetaSPAdes**: Assemble your sequencing data into longer contigs to reconstruct potential viral genomes.
-- **Binning tools (e.g., MetaBAT2)**: Organize contigs into bins representing individual genomes, facilitating genome-centric analyses.
+- **MaxBin2**: Organize contigs into bins representing individual genomes, facilitating genome-centric analyses.
 - **CheckV**: Evaluate the quality of your viral bins to ensure completeness and minimize contamination, enhancing the reliability of your results.
 
-Questions to think about 
-- Take the longest contig from each dataset and blast it
-  - Plot from jaegar score per genome length?
-  - - How many viral contigs are there in each assembly?
-  - - Why are not all contigs in the virome identified as viral contigs?
-  - - Why are viral contigs also identified in the metagenome?
-  - - size differences between viral and non-viral contigs
+Questions
+How many viral contigs are there in the assembly?
+How many bins were found by the tool?
+How many high-quality bins do you find?
 
-## 4. Virus Identification: geNomad
+## 4. Virus Identification
 ### Tool: geNomad
 
 - **geNomad**: Identify and annotate viral sequences within your assembled contigs, providing crucial insights into the viral components of your sample.
