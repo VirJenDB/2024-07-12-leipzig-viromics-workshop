@@ -10,7 +10,7 @@ keypoints:
 - "Fastp, kraken2 using nf-core:taxoprofiler"
 ---
 
-## 2. Quality Control and Taxonomic Profiling of One Virome
+## 2. Taxonomic Profiling of One Virome
 ### Tools: Kraken2
 
 ### Perform taxonomic profiling using Kraken2
