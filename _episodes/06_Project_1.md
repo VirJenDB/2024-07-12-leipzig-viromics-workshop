@@ -18,7 +18,7 @@ keypoints:
 ### Step 1: Exploring Viromics Resources and Files
 
 #### sample 1:  sample (BioProject PRJEB47625)
-Sample from [project](https://www.ebi.ac.uk/ena/browser/view/PRJEB47625) on the characterization of viral communities associated with agricultural soils.
+Sample from [project](https://www.ebi.ac.uk/ena/browser/view/PRJEB47625) on characterizing viral communities associated with human faecal virome.
 
 **Project description:**
 The raw sequencing reads were derived from the human faecal virome (BioProject PRJEB47625). Total VLP DNA isolated from [faecal](https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJEB47625) samples provided by three donors were subjected to whole-genome shotgun metagenomic sequencing using Illumina HiSeq X Ten platform. In this study, we compared the use of PCR and PCR-free methods for sequence library construction to assess the impact of PCR amplification bias on the human faecal virome.
