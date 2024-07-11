@@ -1,6 +1,6 @@
 ---
 title: "Introduction & Setup"
-teaching: 15
+teaching: 30
 exercises: 0
 objectives:
 - "Overall view of the workshop"
