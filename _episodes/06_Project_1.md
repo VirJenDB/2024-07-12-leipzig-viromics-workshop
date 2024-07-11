@@ -17,11 +17,11 @@ keypoints:
 
 ### Step 1: Exploring Viromics Resources and Files
 
-#### sample 1: soil sample (BioProject PRJEB47625)
-Sample from project on characterization of viral communities associated with agricultural soils.
+#### sample 1:  sample (BioProject PRJEB47625)
+Sample from [project](https://www.ebi.ac.uk/ena/browser/view/PRJEB47625) on the characterization of viral communities associated with agricultural soils.
 
 **Project description:**
-The aim of [project PRJEB47625](https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJEB47625) was to profile the viral diversity associated with agricultural fields. Plots treated with four different biochar treatments and two nitrogen fertilization regimes were sampled before and during a tomato growing season. Paired total metagenomes and viral-size metagenomes (viromes) were generated for each sample
+The raw sequencing reads were derived from the human faecal virome (BioProject PRJEB47625). Total VLP DNA isolated from [faecal](https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJEB47625) samples provided by three donors were subjected to whole-genome shotgun metagenomic sequencing using Illumina HiSeq X Ten platform. In this study, we compared the use of PCR and PCR-free methods for sequence library construction to assess the impact of PCR amplification bias on the human faecal virome.
  
 To download the dataset from a BioProject there are [multiple tools](https://www.ncbi.nlm.nih.gov/home/tools/) including Entrez Direct and SRA Toolkit that need to be installed on your system. Alternatively, we used [SRA Explorer](https://sra-explorer.info/#) online tool to find the list of FastQ files belonging to this BioProject within SRA FTP server. 
 
