@@ -7,7 +7,7 @@ questions:
 objectives:
 - "Install Fastp, kraken2 and use them"
 keypoints:
-- "Fastp, kraken2 using nf-core:taxoprofiler"
+- "Fastp, kraken2 using nf-core:taxprofiler"
 ---
 
 ## 2. Taxonomic Profiling of One Virome
@@ -55,8 +55,8 @@ conda activate workshop_nextflow`
 
 For other installation methods, please check [nf-core website](https://nf-co.re/taxprofiler/1.0.1/)
 
-### Step 2: Download taxoprofiler pipeline
-Download taxoprofiler pipeline and test it on a minimal dataset with a single command:
+### Step 2: Download taxprofiler pipeline
+Download taxprofiler pipeline and test it on a minimal dataset with a single command:
 
 In the following command, the name of the method used for the installation has been used as the "Profile" name. The profile name could be one of the docker, singularity, podman, shifter, charliecloud, and conda which instruct the pipeline to use the named tool for software management. For example if you used conda, ` -profile test,conda ` is the correct term.
 ```bash
@@ -70,7 +70,7 @@ cd workshop_day5
 nextflow run nf-core/taxprofiler -profile test,YOURPROFILE --outdir nextflow
 ```
 
-### Step 3: Run the nf-core:taxoprofiler pipeline
+### Step 3: Run the nf-core:taxprofiler pipeline
 
 ---
 
@@ -86,7 +86,7 @@ nextflow run nf-core/taxprofiler -profile test,YOURPROFILE --outdir nextflow
 | `-profile` `<profile>`  | Specifies the execution profile (e.g., `docker`, `singularity`, `conda`, etc.).              |
 
 ```
-# Run the nf-core:taxoprofiler pipeline
+# Run the nf-core:taxprofiler pipeline
 nextflow run nf-core/taxprofiler --input samplesheet.csv --databases database.csv --outdir <OUTDIR> --run_<TOOL1> --run_<TOOL1> -profile <docker/singularity/podman/shifter/charliecloud/conda/institute>
 
 ```
