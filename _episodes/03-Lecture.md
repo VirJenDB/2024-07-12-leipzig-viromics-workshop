@@ -1,7 +1,7 @@
 ---
 title: "Lecture on RDM and Virus Infrastructure"
-teaching: 15
-exercises: 5
+teaching: 30
+exercises: 
 questions:
 
 objectives:
