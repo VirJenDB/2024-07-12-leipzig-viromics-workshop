@@ -17,11 +17,11 @@ keypoints:
 
 ### Step 1: Exploring Viromics Resources and Files
 
-#### sample 1: soil sample (BioProject PRJNA646773)
+#### sample 1: soil sample (BioProject PRJEB47625)
 Sample from project on characterization of viral communities associated with agricultural soils.
 
 **Project description:**
-The aim of [project PRJNA646773](https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA646773) was to profile the viral diversity associated with agricultural fields. Plots treated with four different biochar treatments and two nitrogen fertilization regimes were sampled before and during a tomato growing season. Paired total metagenomes and viral-size metagenomes (viromes) were generated for each sample
+The aim of [project PRJEB47625](https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJEB47625) was to profile the viral diversity associated with agricultural fields. Plots treated with four different biochar treatments and two nitrogen fertilization regimes were sampled before and during a tomato growing season. Paired total metagenomes and viral-size metagenomes (viromes) were generated for each sample
  
 To download the dataset from a BioProject there are [multiple tools](https://www.ncbi.nlm.nih.gov/home/tools/) including Entrez Direct and SRA Toolkit that need to be installed on your system. Alternatively, we used [SRA Explorer](https://sra-explorer.info/#) online tool to find the list of FastQ files belonging to this BioProject within SRA FTP server. 
 
@@ -68,24 +68,24 @@ To download the dataset from a BioProject there are [multiple tools](https://www
 > Ensure that you have one of these tools installed before proceeding with the download.
 {: .discussion}
 
-The list of the curl commands are stored in [PRJNA646773_fastq_download.sh](https://raw.githubusercontent.com/VirJenDB/2024-07-12-leipzig-viromics-workshop/f38c57fe435c149f8210d2e9c46cf1d34f85fd91/rawfiles/dataset/PRJNA646773_fastq_download.sh) bash script file. 
+The list of the curl commands are stored in [PRJEB47625_fastq_download.sh](https://raw.githubusercontent.com/VirJenDB/2024-07-12-leipzig-viromics-workshop/6db885443ca210ba51c07345717a0bed9abf707a/rawfiles/dataset/PRJEB47625_fastq_download.sh) bash script file. 
 
 
 ```bash
-# Create a new directory "PRJNA646773" within "workshop" directory
-mkdir workshop_day5 && mkdir workshop_day5/PRJNA646773
+# Create a new directory "PRJEB47625" within "workshop" directory
+mkdir workshop_day5 && mkdir workshop_day5/PRJEB47625
 
-# Download "PRJNA646773_fastq_download.sh" bash script file, if you are using wget  
-wget -O workshop_day5/PRJNA646773/PRJNA646773_fastq_download.sh https://raw.githubusercontent.com/VirJenDB/2024-07-12-leipzig-viromics-workshop/161a5150dea202bab6b875e54a7bfee568eb4627/rawfiles/dataset/PRJNA646773_fastq_download_wget.sh
+# Download "PRJEB47625_fastq_download.sh" bash script file, if you are using wget  
+wget -O workshop_day5/PRJEB47625/PRJEB47625_fastq_download.sh https://raw.githubusercontent.com/VirJenDB/2024-07-12-leipzig-viromics-workshop/161a5150dea202bab6b875e54a7bfee568eb4627/rawfiles/dataset/PRJEB47625_fastq_download_wget.sh
 
-# Download "PRJNA646773_fastq_download.sh" bash script file, if you are using curl
-curl -L https://raw.githubusercontent.com/VirJenDB/2024-07-12-leipzig-viromics-workshop/f38c57fe435c149f8210d2e9c46cf1d34f85fd91/rawfiles/dataset/PRJNA646773_fastq_download.sh -o workshop_day5/PRJNA646773/PRJNA646773_fastq_download.sh
+# Download "PRJEB47625_fastq_download.sh" bash script file, if you are using curl
+curl -L https://raw.githubusercontent.com/VirJenDB/2024-07-12-leipzig-viromics-workshop/6db885443ca210ba51c07345717a0bed9abf707a/rawfiles/dataset/PRJEB47625_fastq_download.sh -o workshop_day5/PRJEB47625/PRJEB47625_fastq_download.sh
 
 # Give the required permission to the script to be executed
-chmod +x workshop_day5/PRJNA646773/PRJNA646773_fastq_download.sh
+chmod +x workshop_day5/PRJEB47625/PRJEB47625_fastq_download.sh
 
 # Execute the script that will download 39 Datasets in the current directory 
-./workshop_day5/PRJNA646773/PRJNA646773_fastq_download.sh
+./workshop_day5/PRJEB47625/PRJEB47625_fastq_download.sh
 ```
 
 ### Step 2: Perform quality control using Fastp
@@ -112,7 +112,7 @@ Alternatively, you can install Fastp tool using conda `conda install bioconda::f
 # Enter to the workshop day 5 folder
 cd workshop_day5 && mkdir fastp_report fastp_output
 # Perform quality control on the input FASTQ file
-fastp -i PRJNA646773/SRR8487027_DNA_of_soils_bulk_1.fastq.gz -I PRJNA646773/SRR8487027_DNA_of_soils_bulk_2.fastq.gz -o fastp_output/SRR8487027_1.fastq.gz -O fastp_output/SRR8487027_2.fastq.gz --html fastp_report/report.html --json fastp_report/report.json
+fastp -i PRJEB47625/SRR8487027_DNA_of_soils_bulk_1.fastq.gz -I PRJEB47625/SRR8487027_DNA_of_soils_bulk_2.fastq.gz -o fastp_output/SRR8487027_1.fastq.gz -O fastp_output/SRR8487027_2.fastq.gz --html fastp_report/report.html --json fastp_report/report.json
 ```
 
 Fastp not only performs quality filtering but also removes adapters and low-quality reads, producing a cleaned dataset ready for downstream analysis.
@@ -140,7 +140,7 @@ head -n 26 fastp_report/report.json
 # create a directory for FastQC output
 mkdir fastqc_report 
 # Run FastQC on the input FASTQ file
-fastqc PRJNA646773/SRR8487027_DNA_of_soils_bulk_1.fastq.gz -o fastqc_report
+fastqc PRJEB47625/SRR8487027_DNA_of_soils_bulk_1.fastq.gz -o fastqc_report
 ```
 
 FastQC generates a detailed report on the quality of the sequencing data, including information on read length distribution, GC content, and the presence of adapters, which helps in identifying any potential issues before further analysis.
