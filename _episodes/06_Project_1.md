@@ -117,6 +117,20 @@ fastp -i PRJNA646773/SRR8487027_DNA_of_soils_bulk_1.fastq.gz -I PRJNA646773/SRR8
 
 Fastp not only performs quality filtering but also removes adapters and low-quality reads, producing a cleaned dataset ready for downstream analysis.
 
+**Check the outputs:**
+
+```bash
+# If the fastp run finished successfully, there should be two report files in the fastp_report folder and two fastq files within the "fastp_output" folder. fastq files will be used in the next step.
+ls fastp_output/
+ls fastp_report/ 
+
+# To see fastq content, use zcat as they are compressed files
+zcat fastp_output/SRR8487027_1.fastq.gz | head -n 10
+ 
+# To see the report, either use web browser to open fastp_report/report.html or use the head to read the first 26 lines of json file
+head -n 26 fastp_report/report.json
+```
+
 ### Step 3: Assess the quality of the sequencing data using FastQC
 [FastQC](https://github.com/s-andrews/FastQC) provides a simple way to perform quality control checks on raw sequence data. Check the [download](https://www.bioinformatics.babraham.ac.uk/projects/download.html#fastqc) page to download and install it or install it in the conda environment `conda install bioconda::fastqc`.
 
