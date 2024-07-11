@@ -86,9 +86,6 @@ chmod +x workshop_day5/PRJNA646773/PRJNA646773_fastq_download.sh
 
 # Execute the script that will download 39 Datasets in the current directory 
 ./workshop_day5/PRJNA646773/PRJNA646773_fastq_download.sh
-
-# Enter to the workshop day 5 folder
-cd workshop_day5
 ```
 
 ### Step 2: Perform quality control using Fastp
@@ -112,6 +109,8 @@ Alternatively, you can install Fastp tool using conda `conda install bioconda::f
 **Usage:**
 
 ```bash
+# Enter to the workshop day 5 folder
+cd workshop_day5 && mkdir fastp_report fastp_report
 # Perform quality control on the input FASTQ file
 fastp -i PRJNA646773/SRR8487027_1.fastq.gz -I PRJNA646773/SRR8487027_2.fastq.gz -o fastp_output/SRR8487027_1.fastq.gz -O fastp_output/SRR8487027_2.fastq.gz --html fastp_report/report.html --json fastp_report/report.json --thread 4 --length_required 50
 ```
