@@ -12,17 +12,34 @@ keypoints:
 - "Fastp"
 ---
 
-## 1. Exploring Viromics Resources and Files
+## 1. Download viromes and generate a summary report
 ### Tools: Seqtk, FastQC, Fastp
 
-### Step 1: Download viromes and generate a summary report
+### Step 1: Exploring Viromics Resources and Files
 
+#### sample 1: soil sample (BioProject PRJNA646773)
+Sample from project on characterization of viral communities associated with agricultural soils.
+
+**Project description:**
+The aim of [project PRJNA646773](https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA646773) was to profile the viral diversity associated with agricultural fields. Plots treated with four different biochar treatments and two nitrogen fertilization regimes were sampled before and during a tomato growing season. Paired total metagenomes and viral-size metagenomes (viromes) were generated for each sample
+ 
+To download the dataset from a BioProject there are [multiple tools](https://www.ncbi.nlm.nih.gov/home/tools/) including Entrez Direct and SRA Toolkit that need to be installed on your system. Alternatively, we used [SRA Explorer](https://sra-explorer.info/#) online tool to find the list of FastQ files belonging to this BioProject within SRA FTP server. 
+
+The list of the curl commands are stored in [PRJNA646773_fastq_download.sh]() bash script file. 
+ 
 ```bash
-# Example command to download a virome dataset
-wget -O virome_dataset.fastq.gz [URL]
+# Create a new directory "PRJNA646773" within "workshop" directory
+mkir workshop && cd workshop && mkdir PRJNA646773
 
-# Unzip the downloaded dataset
-gunzip virome_dataset.fastq.gz
+# Download "PRJNA646773_fastq_download.sh" bash script file  
+wget -O PRJNA646773_fastq_download.sh [URL]
+
+# Give the required permission to the script to be executed
+chmod +x PRJNA646773_fastq_download.sh
+
+# Execute the script that will download 39 Datasets in the current directory 
+./PRJNA646773_fastq_download.sh
+ 
 ```
 
 ### Step 2: Perform quality control using Fastp
