@@ -86,7 +86,9 @@ chmod +x workshop_day5/PRJNA646773/PRJNA646773_fastq_download.sh
 
 # Execute the script that will download 39 Datasets in the current directory 
 ./workshop_day5/PRJNA646773/PRJNA646773_fastq_download.sh
- 
+
+# Enter to the workshop day 5 folder
+cd workshop_day5
 ```
 
 ### Step 2: Perform quality control using Fastp
@@ -111,7 +113,7 @@ Alternatively, you can install Fastp tool using conda `conda install bioconda::f
 
 ```bash
 # Perform quality control on the input FASTQ file
-fastp -i workshop_day5/PRJNA646773/input_R1.fastq.gz -I workshop_day5/PRJNA646773/input_R2.fastq.gz -o output_R1.fastq.gz -O output_R2.fastq.gz --html report.html --json report.json --thread 4 --length_required 50
+fastp -i PRJNA646773/SRR8487027_1.fastq.gz -I PRJNA646773/SRR8487027_2.fastq.gz -o fastp_output/SRR8487027_1.fastq.gz -O fastp_output/SRR8487027_2.fastq.gz --html fastp_report/report.html --json fastp_report/report.json --thread 4 --length_required 50
 ```
 
 Fastp not only performs quality filtering but also removes adapters and low-quality reads, producing a cleaned dataset ready for downstream analysis.
