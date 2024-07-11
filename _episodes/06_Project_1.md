@@ -119,6 +119,13 @@ chmod +x PRJNA646773_fastq_download.sh
             <p>
                 The default shell is usually Bash and there is usually no need to install anything.
             </p>
+	    <div class="tab-pane fade" id="shell-macos" role="tabpanel">
+            <p>
+                The default shell is usually Bash and there is usually no need to install anything.
+            </p>
+            <p>Here is a `bash` code example:</p>
+            <pre><code class="bash">echo "This is a bash code example"</code></pre>
+            </div>
         </div>
     </div>
 </div>
