@@ -1,0 +1,29 @@
+/* styles.css */
+
+.prerequisites {
+  background-color: #f9f2f4;
+  border-left: 6px solid #d9534f;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.warning {
+  background-color: #fcf8e3;
+  border-left: 6px solid #f0ad4e;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.note {
+  background-color: #d9edf7;
+  border-left: 6px solid #5bc0de;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.tip {
+  background-color: #dff0d8;
+  border-left: 6px solid #5cb85c;
+  padding: 10px;
+  margin-bottom: 15px;
+}
