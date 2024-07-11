@@ -76,7 +76,7 @@ The list of the curl commands are stored in [PRJEB47625_fastq_download.sh](https
 mkdir workshop_day5 && mkdir workshop_day5/PRJEB47625
 
 # Download "PRJEB47625_fastq_download.sh" bash script file, if you are using wget  
-wget -O workshop_day5/PRJEB47625/PRJEB47625_fastq_download.sh https://raw.githubusercontent.com/VirJenDB/2024-07-12-leipzig-viromics-workshop/161a5150dea202bab6b875e54a7bfee568eb4627/rawfiles/dataset/PRJEB47625_fastq_download_wget.sh
+wget -O workshop_day5/PRJEB47625/PRJEB47625_fastq_download.sh https://raw.githubusercontent.com/VirJenDB/2024-07-12-leipzig-viromics-workshop/1e984f29c4c7e4559493ae26453c6d9122763353/rawfiles/dataset/PRJEB47625_fastq_download_wget.sh
 
 # Download "PRJEB47625_fastq_download.sh" bash script file, if you are using curl
 curl -L https://raw.githubusercontent.com/VirJenDB/2024-07-12-leipzig-viromics-workshop/6db885443ca210ba51c07345717a0bed9abf707a/rawfiles/dataset/PRJEB47625_fastq_download.sh -o workshop_day5/PRJEB47625/PRJEB47625_fastq_download.sh
