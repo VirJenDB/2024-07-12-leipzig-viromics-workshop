@@ -11,22 +11,10 @@ keypoints:
 ---
 
 ## 2. Quality Control and Taxonomic Profiling of One Virome
-### Tools: Fastp, Kraken2
-
-### Step 1: Perform quality control using Fastp
-[Fastp](https://github.com/OpenGene/fastp?tab=readme-ov-file) is a fast all-in-one preprocessing tool for FASTQ files. Install the tool from [download page](https://github.com/OpenGene/fastp?tab=readme-ov-file#or-download-the-latest-prebuilt-binary-for-linux-users).
-
-**Usage:**
-
-```bash
-# Perform quality control on the input FASTQ file
-fastp -i input.fastq -o cleaned_output.fastq -h report.html -j report.json
-```
-
-Fastp not only performs quality filtering but also removes adapters and low-quality reads, producing a cleaned dataset ready for downstream analysis.
+### Tools: Kraken2
 
 ### Perform taxonomic profiling using Kraken2
-[Kraken2]() is a system for assigning taxonomic labels to short DNA sequences. [nf-core/taxprofiler](https://nf-co.re/taxprofiler/1.0.1/) is a bioinformatics best-practice analysis pipeline for taxonomic classification and profiling of shotgun metagenomic data. It allows for in-parallel taxonomic identification of reads or taxonomic abundance estimation with multiple classification and profiling tools against multiple databases, produces standardised output tables. 
+[Kraken2](https://ccb.jhu.edu/software/kraken2/) is a system for assigning taxonomic labels to short DNA sequences. [nf-core/taxprofiler](https://nf-co.re/taxprofiler/1.0.1/) is a bioinformatics best-practice analysis pipeline for taxonomic classification and profiling of shotgun metagenomic data. It allows for in-parallel taxonomic identification of reads or taxonomic abundance estimation with multiple classification and profiling tools against multiple databases, produces standardised output tables. 
 
 
 **Usage:**
