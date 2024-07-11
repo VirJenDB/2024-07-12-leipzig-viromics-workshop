@@ -94,7 +94,6 @@ chmod +x workshop_day5/PRJNA646773/PRJNA646773_fastq_download.sh
 Alternatively, you can install Fastp tool using conda `conda install bioconda::fastp`
 
 ---
-
 ## Explanation of Main Fastp Options
 
 | Option            | Description                                     |
@@ -107,7 +106,6 @@ Alternatively, you can install Fastp tool using conda `conda install bioconda::f
 | `--json`          | Generate a JSON report.                         |
 | `--thread`        | Number of threads to use.                       |
 | `--length_required` | Minimum length of reads to keep.             |
-
 
 **Usage:**
 
