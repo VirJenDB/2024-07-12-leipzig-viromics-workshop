@@ -90,36 +90,38 @@ chmod +x PRJNA646773_fastq_download.sh
  
 ```
 
-<div>
+<div class="container mt-3">
     <ul class="nav nav-tabs" role="tablist">
-      <li role="presentation" class=""><a data-os="windows" href="#shell-windows" aria-controls="Windows" role="tab" data-toggle="tab">WGET</a></li>
-      <li role="presentation" class=""><a data-os="macos" href="#shell-macos" aria-controls="MacOS" role="tab" data-toggle="tab">CURL</a></li>
+        <li class="nav-item">
+            <a class="nav-link active" id="wget-tab" data-toggle="tab" href="#shell-windows" role="tab">WGET</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="curl-tab" data-toggle="tab" href="#shell-macos" role="tab">CURL</a>
+        </li>
     </ul>
 
     <div class="tab-content">
-      <article role="tabpanel" class="tab-pane" id="shell-windows">
-        <ol>
-          <li>Download the Git for Windows <a href="https://gitforwindows.org/">installer</a>.</li>
-          <li>Run the installer and follow the steps below:
+        <div class="tab-pane fade show active" id="shell-windows" role="tabpanel">
             <ol>
-              
-              <li>Click on "Install".</li>
-                Create a new directory "PRJNA646773" within "workshop" directory
-		<code>mkdir workshop && cd workshop && mkdir PRJNA646773</code>
-              
-              
-              <li>Click on "Finish" or "Next".</li>
+                <li>Download the Git for Windows <a href="https://gitforwindows.org/">installer</a>.</li>
+                <li>Run the installer and follow the steps below:
+                    <ol>
+                        <li>Click on "Install".</li>
+                        <li>Create a new directory "PRJNA646773" within the "workshop" directory:
+                            <code>mkdir workshop && cd workshop && mkdir PRJNA646773</code>
+                        </li>
+                        <li>Click on "Finish" or "Next".</li>
+                    </ol>
+                </li>
             </ol>
-          </li>
-      </article>
-      <article role="tabpanel" class="tab-pane" id="shell-macos">
-        <p>
-          The default shell is usually Bash and there is usually no need to
-          install anything.
-        </p>
-      </article>
+        </div>
+        <div class="tab-pane fade" id="shell-macos" role="tabpanel">
+            <p>
+                The default shell is usually Bash and there is usually no need to install anything.
+            </p>
+        </div>
     </div>
-  </div>
+</div>
 
 # x
 
