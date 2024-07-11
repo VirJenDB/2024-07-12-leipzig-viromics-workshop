@@ -73,19 +73,19 @@ The list of the curl commands are stored in [PRJNA646773_fastq_download.sh](http
 
 ```bash
 # Create a new directory "PRJNA646773" within "workshop" directory
-mkdir workshop && mkdir workshop/PRJNA646773
+mkdir workshop_day5 && mkdir workshop_day5/PRJNA646773
 
 # Download "PRJNA646773_fastq_download.sh" bash script file, if you are using wget  
-wget -O workshop/PRJNA646773/PRJNA646773_fastq_download.sh https://raw.githubusercontent.com/VirJenDB/2024-07-12-leipzig-viromics-workshop/f38c57fe435c149f8210d2e9c46cf1d34f85fd91/rawfiles/dataset/PRJNA646773_fastq_download.sh
+wget -O workshop_day5/PRJNA646773/PRJNA646773_fastq_download.sh https://raw.githubusercontent.com/VirJenDB/2024-07-12-leipzig-viromics-workshop/f38c57fe435c149f8210d2e9c46cf1d34f85fd91/rawfiles/dataset/PRJNA646773_fastq_download.sh
 
 # Download "PRJNA646773_fastq_download.sh" bash script file, if you are using curl
-curl -L https://raw.githubusercontent.com/VirJenDB/2024-07-12-leipzig-viromics-workshop/f38c57fe435c149f8210d2e9c46cf1d34f85fd91/rawfiles/dataset/PRJNA646773_fastq_download.sh -o workshop/PRJNA646773/PRJNA646773_fastq_download.sh
+curl -L https://raw.githubusercontent.com/VirJenDB/2024-07-12-leipzig-viromics-workshop/f38c57fe435c149f8210d2e9c46cf1d34f85fd91/rawfiles/dataset/PRJNA646773_fastq_download.sh -o workshop_day5/PRJNA646773/PRJNA646773_fastq_download.sh
 
 # Give the required permission to the script to be executed
-chmod +x workshop/PRJNA646773/PRJNA646773_fastq_download.sh
+chmod +x workshop_day5/PRJNA646773/PRJNA646773_fastq_download.sh
 
 # Execute the script that will download 39 Datasets in the current directory 
-./workshop/PRJNA646773/PRJNA646773_fastq_download.sh
+./workshop_day5/PRJNA646773/PRJNA646773_fastq_download.sh
  
 ```
 
@@ -116,7 +116,7 @@ title: "Explanation of Main Options for fastp"
 
 ```bash
 # Perform quality control on the input FASTQ file
-fastp -i input_R1.fastq.gz -I input_R2.fastq.gz -o output_R1.fastq.gz -O output_R2.fastq.gz --html report.html --json report.json --thread 4 --length_required 50
+fastp -i workshop_day5/PRJNA646773/input_R1.fastq.gz -I workshop_day5/PRJNA646773/input_R2.fastq.gz -o output_R1.fastq.gz -O output_R2.fastq.gz --html report.html --json report.json --thread 4 --length_required 50
 ```
 
 Fastp not only performs quality filtering but also removes adapters and low-quality reads, producing a cleaned dataset ready for downstream analysis.
