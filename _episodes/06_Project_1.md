@@ -94,16 +94,23 @@ chmod +x workshop/PRJNA646773/PRJNA646773_fastq_download.sh
 Alternatively, you can install Fastp tool using conda `conda install bioconda::fastp`
 
 ---
-Explanation of Main Options
--i: Input file for read 1 (can be gzipped).
--I: Input file for read 2 (paired-end, can be gzipped).
--o: Output file for read 1 (can be gzipped).
--O: Output file for read 2 (paired-end, can be gzipped).
---html: Generate an HTML report.
---json: Generate a JSON report.
---thread: Number of threads to use.
---length_required: Minimum length of reads to keep.
+layout: post
+title: "Explanation of Main Options for fastp"
 ---
+
+## Explanation of Main Options
+
+| Option            | Description                                     |
+|-------------------|-------------------------------------------------|
+| `-i`              | Input file for read 1 (can be gzipped).         |
+| `-I`              | Input file for read 2 (paired-end, can be gzipped). |
+| `-o`              | Output file for read 1 (can be gzipped).        |
+| `-O`              | Output file for read 2 (paired-end, can be gzipped). |
+| `--html`          | Generate an HTML report.                        |
+| `--json`          | Generate a JSON report.                         |
+| `--thread`        | Number of threads to use.                       |
+| `--length_required` | Minimum length of reads to keep.             |
+
 
 **Usage:**
 
