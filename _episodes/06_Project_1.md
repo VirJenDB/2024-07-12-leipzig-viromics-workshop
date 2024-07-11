@@ -26,20 +26,9 @@ The aim of [project PRJNA646773](https://www.ncbi.nlm.nih.gov/bioproject/?term=P
 To download the dataset from a BioProject there are [multiple tools](https://www.ncbi.nlm.nih.gov/home/tools/) including Entrez Direct and SRA Toolkit that need to be installed on your system. Alternatively, we used [SRA Explorer](https://sra-explorer.info/#) online tool to find the list of FastQ files belonging to this BioProject within SRA FTP server. 
 
 
-~~~
-# deactivate the conda environment before running coconet
-$ conda deactivate
-
-# install coconet
-$ pip install --user coconet-binning
-
-# Run coconet. Don't forget to include your username in the command.
-$ /home/<USERNAME>/.local/bin/coconet run --output 3_binning ...
-~~
-{: .language-bash}
-
-> ## Binning parameters
+> ## prerequisites
 > To successfully download the required files, you need to have either `wget` or `curl` installed on your system. These tools are essential for fetching files from the internet.
+>
 > **Using `wget`:**
 > - `wget` is a command-line utility for downloading files from the web. It supports HTTP, HTTPS, and FTP protocols.
 > - **Installation:**
@@ -47,36 +36,30 @@ $ /home/<USERNAME>/.local/bin/coconet run --output 3_binning ...
 >    ```sh
 >    sudo apt-get install wget
 >    ```
->  - **MacOS:**
+>  - **MacOS (requires Homebrew):**
 >    ```sh
 >    brew install wget
 >    ```
->    (requires Homebrew)
+>  - **Conda environment:**
+>    ```sh
+>    conda install anaconda::wget
+>    ```
 >
 > **Using `curl`:**
 > - `curl` is a command-line tool for transferring data using various network protocols, including HTTP, HTTPS, and FTP.
 > - **Installation:**
 >   - **Linux (Debian/Ubuntu):**
+>   ```sh
+>   sudo apt-get install curl
+>   ```
+> - **MacOS (requires Homebrew):**
+>   ```sh
+>   brew install curl
+>   ```
+>  - **Conda environment:**
 >    ```sh
->    sudo apt-get install curl
+>    conda install conda-forge::curl
 >    ```
->  - **MacOS:**
->    ```sh
->    brew install curl
->    ```
->    (requires Homebrew)
->
-> **Example Usage:**
->
-> - **wget:**
->  ```sh
->  wget http://example.com/file.zip
->  ```
-> 
-> - **curl:**
->  ```sh
->  curl -O http://example.com/file.zip
->  ```
 >
 > Ensure that you have one of these tools installed before proceeding with the download.
 {: .discussion}
