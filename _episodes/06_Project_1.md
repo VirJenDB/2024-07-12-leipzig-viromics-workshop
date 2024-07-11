@@ -76,6 +76,34 @@ chmod +x PRJNA646773_fastq_download.sh
  
 ```
 
+<details>
+<summary>⚠️ Code Examples</summary>
+
+### Code Examples in R and Python
+
+<table>
+<tr>
+  <th>wget</th>
+  <th>curl</th>
+</tr>
+<tr>
+  <td>
+
+```bash
+# Create a new directory "PRJNA646773" within "workshop" directory
+mkir workshop && cd workshop && mkdir PRJNA646773
+```
+</td>
+<td>
+```bash
+# Execute the script that will download 39 Datasets in the current directory
+./PRJNA646773_fastq_download.sh
+```
+</td>
+</tr>
+</table>
+</details>
+
 ### Step 2: Perform quality control using Fastp
 [Fastp](https://github.com/OpenGene/fastp?tab=readme-ov-file) is a fast all-in-one preprocessing tool for FASTQ files. Install the tool from [download page](https://github.com/OpenGene/fastp?tab=readme-ov-file#or-download-the-latest-prebuilt-binary-for-linux-users).
 
