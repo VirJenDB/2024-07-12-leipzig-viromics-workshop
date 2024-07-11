@@ -21,7 +21,7 @@ keypoints:
 **Method 1:**
 Install [Nextflow](https://www.nextflow.io/docs/latest/install.html#installation) from the  (>=22.10.1).
 
-**Method 2:**
+**Method 2: (recommended)**
 Install [Docker Engine](https://docs.docker.com/engine/install/) using docker.
 
 ```
