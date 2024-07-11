@@ -113,7 +113,6 @@ chmod +x PRJNA646773_fastq_download.sh
 
             <p>Execute the script that will download 39 Datasets in the current directory</p>
             <pre><code class="bash">./PRJNA646773_fastq_download.sh</code></pre>
-	</div>
 	<div class="tab-pane fade" id="shell-macos" role="tabpanel">
             <p>Create a new directory "PRJNA646773" within "workshop" directory</p>
             <pre><code class="bash">mkir workshop && cd workshop && mkdir PRJNA646773</code></pre>
