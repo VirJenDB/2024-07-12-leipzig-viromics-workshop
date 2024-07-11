@@ -25,7 +25,19 @@ The aim of [project PRJNA646773](https://www.ncbi.nlm.nih.gov/bioproject/?term=P
  
 To download the dataset from a BioProject there are [multiple tools](https://www.ncbi.nlm.nih.gov/home/tools/) including Entrez Direct and SRA Toolkit that need to be installed on your system. Alternatively, we used [SRA Explorer](https://sra-explorer.info/#) online tool to find the list of FastQ files belonging to this BioProject within SRA FTP server. 
 
-* [Notes](#notes) To successfully download the required files, you will need to have either wget or curl installed on your system. These tools are essential for fetching files from the internet through the command line.
+
+<details>
+<summary>⚠️ Warning: Download Requirements</summary>
+
+To successfully download the required files, you need to have either `wget` or `curl` installed on your system. These tools are essential for fetching files from the internet via the command line.
+
+**Using `wget`:**
+- `wget` is a command-line utility for downloading files from the web. It supports HTTP, HTTPS, and FTP protocols.
+- **Installation:**
+  - **Linux (Debian/Ubuntu):** `sudo apt-get install wget`
+  - **MacOS:** `brew install wget` (requires Homebrew)
+</details>
+
 
 > **⚠️ Warning: Download Requirements**
 > 
