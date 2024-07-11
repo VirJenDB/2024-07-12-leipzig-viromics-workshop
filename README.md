@@ -5,3 +5,5 @@ Helmholtz Centre for Environmental Research
 Instructors: Noriko Cassman, Shahram Saghaei
 
 Helpers: Shahram Saghaei, Martin Bole, Jonas Kasmanas
+
+Link to the full course page: https://www.ufz.de/index.php?en=47299
