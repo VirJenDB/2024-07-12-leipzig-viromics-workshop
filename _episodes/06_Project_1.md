@@ -28,36 +28,34 @@ To download the dataset from a BioProject there are [multiple tools](https://www
 
 <details>
 <summary>⚠️ Warning: Download Requirements</summary>
-> 
-> To successfully download the required files, you need to have either `wget` or `curl` installed on your system. These tools are essential for fetching files from the internet via the command line.
-> 
-> **Using `wget`:**
-> - `wget` is a command-line utility for downloading files from the web. It supports HTTP, HTTPS, and FTP protocols.
-> - **Installation:**
->   - **Linux (Debian/Ubuntu):** `sudo apt-get install wget`
->   - **MacOS:** `brew install wget` (requires Homebrew)
->   - **Windows:** Available through GNUWin32 or package managers like Chocolatey (`choco install wget`)
-> 
-> **Using `curl`:**
-> - `curl` is a command-line tool for transferring data using various network protocols, including HTTP, HTTPS, and FTP.
-> - **Installation:**
->   - **Linux (Debian/Ubuntu):** `sudo apt-get install curl`
->   - **MacOS:** `brew install curl` (requires Homebrew)
->   - **Windows:** Available through Windows 10's default installation or package managers like Chocolatey (`choco install curl`)
-> 
-> **Example Usage:**
-> 
-> - **wget:**
->   ```sh
->   wget http://example.com/file.zip
->   ```
-> 
-> - **curl:**
->   ```sh
->   curl -O http://example.com/file.zip
->   ```
-> 
-> Ensure that you have one of these tools installed before proceeding with the download.
+ 
+ To successfully download the required files, you need to have either `wget` or `curl` installed on your system. These tools are essential for fetching files from the internet via the command line.
+ 
+ **Using `wget`:**
+ - `wget` is a command-line utility for downloading files from the web. It supports HTTP, HTTPS, and FTP protocols.
+ - **Installation:**
+   - **Linux (Debian/Ubuntu):** `sudo apt-get install wget`
+   - **MacOS:** `brew install wget` (requires Homebrew)
+ 
+ **Using `curl`:**
+ - `curl` is a command-line tool for transferring data using various network protocols, including HTTP, HTTPS, and FTP.
+ - **Installation:**
+   - **Linux (Debian/Ubuntu):** `sudo apt-get install curl`
+   - **MacOS:** `brew install curl` (requires Homebrew)
+ 
+ **Example Usage:**
+ 
+ - **wget:**
+   ```sh
+   wget http://example.com/file.zip
+   ```
+ 
+ - **curl:**
+   ```sh
+   curl -O http://example.com/file.zip
+   ```
+ 
+Ensure that you have one of these tools installed before proceeding with the download.
 </details>
 
 The list of the curl commands are stored in [PRJNA646773_fastq_download.sh](https://raw.githubusercontent.com/VirJenDB/2024-07-12-leipzig-viromics-workshop/f38c57fe435c149f8210d2e9c46cf1d34f85fd91/rawfiles/dataset/PRJNA646773_fastq_download.sh) bash script file. 
