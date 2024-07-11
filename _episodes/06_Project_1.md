@@ -33,33 +33,33 @@ To download the dataset from a BioProject there are [multiple tools](https://www
 > - `wget` is a command-line utility for downloading files from the web. It supports HTTP, HTTPS, and FTP protocols.
 > - **Installation:**
 >  - **Linux (Debian/Ubuntu):**
->    ```sh
->    sudo apt-get install wget
->    ```
+>   ```sh
+>   sudo apt-get install wget
+>   ```
 >  - **MacOS (requires Homebrew):**
->    ```sh
->    brew install wget
->    ```
+>   ```sh
+>   brew install wget
+>   ```
 >  - **Conda environment:**
->    ```sh
->    conda install anaconda::wget
->    ```
+>   ```sh
+>   conda install anaconda::wget
+>   ```
 >
 > **Using `curl`:**
 > - `curl` is a command-line tool for transferring data using various network protocols, including HTTP, HTTPS, and FTP.
 > - **Installation:**
->   - **Linux (Debian/Ubuntu):**
+>  - **Linux (Debian/Ubuntu):**
 >   ```sh
 >   sudo apt-get install curl
 >   ```
-> - **MacOS (requires Homebrew):**
+>  - **MacOS (requires Homebrew):**
 >   ```sh
 >   brew install curl
 >   ```
 >  - **Conda environment:**
->    ```sh
->    conda install conda-forge::curl
->    ```
+>   ```sh
+>   conda install conda-forge::curl
+>   ```
 >
 > Ensure that you have one of these tools installed before proceeding with the download.
 {: .discussion}
@@ -71,9 +71,12 @@ The list of the curl commands are stored in [PRJNA646773_fastq_download.sh](http
 # Create a new directory "PRJNA646773" within "workshop" directory
 mkdir workshop && cd workshop && mkdir PRJNA646773
 
-# Download "PRJNA646773_fastq_download.sh" bash script file  
+# Download "PRJNA646773_fastq_download.sh" bash script file, if you are using wget  
 wget -O PRJNA646773_fastq_download.sh https://raw.githubusercontent.com/VirJenDB/2024-07-12-leipzig-viromics-workshop/f38c57fe435c149f8210d2e9c46cf1d34f85fd91/rawfiles/dataset/PRJNA646773_fastq_download.sh
+
+# Download "PRJNA646773_fastq_download.sh" bash script file, if you are using curl
 curl -L https://raw.githubusercontent.com/VirJenDB/2024-07-12-leipzig-viromics-workshop/f38c57fe435c149f8210d2e9c46cf1d34f85fd91/rawfiles/dataset/PRJNA646773_fastq_download.sh -o PRJNA646773_fastq_download.sh
+
 # Give the required permission to the script to be executed
 chmod +x PRJNA646773_fastq_download.sh
 
@@ -81,58 +84,6 @@ chmod +x PRJNA646773_fastq_download.sh
 ./PRJNA646773_fastq_download.sh
  
 ```
-
-<style>
-/* Style the tab */
-.tablink {
-  background-color: #f1f1f1;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  font-size: 17px;
-  transition: 0.3s;
-}
-
-/* Change background color of buttons on hover */
-.tablink:hover {
-  background-color: #ddd;
-}
-
-/* Style the tab content */
-.tabcontent {
-  display: none;
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-top: none;
-}
-
-/* Show the active tab content */
-.tabcontent.active {
-  display: block;
-}
-</style>
-<script>
-// Function to open the tab
-function openTab(evt, tabName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(tabName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-
-// Set default tab to open
-document.addEventListener('DOMContentLoaded', (event) => {
-  document.querySelector('.tablink').click();
-});
-</script>
 
 ### Step 2: Perform quality control using Fastp
 [Fastp](https://github.com/OpenGene/fastp?tab=readme-ov-file) is a fast all-in-one preprocessing tool for FASTQ files. Install the tool from [download page](https://github.com/OpenGene/fastp?tab=readme-ov-file#or-download-the-latest-prebuilt-binary-for-linux-users).
