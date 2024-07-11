@@ -93,19 +93,19 @@ chmod +x PRJNA646773_fastq_download.sh
 <div class="container mt-3">
     <ul class="nav nav-tabs" role="tablist">
         <li class="nav-item">
-            <a class="nav-link active" id="wget-tab" data-toggle="tab" href="#shell-windows" role="tab">WGET</a>
+            <a class="nav-link active" id="wget-tab" data-bs-toggle="tab" href="#shell-windows" role="tab">WGET</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" id="curl-tab" data-toggle="tab" href="#shell-macos" role="tab">CURL</a>
+            <a class="nav-link" id="curl-tab" data-bs-toggle="tab" href="#shell-macos" role="tab">CURL</a>
         </li>
     </ul>
 
     <div class="tab-content">
         <div class="tab-pane fade show active" id="shell-windows" role="tabpanel">
             <p>Create a new directory "PRJNA646773" within "workshop" directory</p>
-            <pre><code class="bash">mkir workshop && cd workshop && mkdir PRJNA646773</code></pre>
-	    
-	    <p>Download "PRJNA646773_fastq_download.sh" bash script file</p>
+            <pre><code class="bash">mkdir workshop && cd workshop && mkdir PRJNA646773</code></pre>
+
+            <p>Download "PRJNA646773_fastq_download.sh" bash script file</p>
             <pre><code class="bash">wget -O PRJNA646773_fastq_download.sh https://raw.githubusercontent.com/VirJenDB/2024-07-12-leipzig-viromics-workshop/f38c57fe435c149f8210d2e9c46cf1d34f85fd91/rawfiles/dataset/PRJNA646773_fastq_download.sh</code></pre>
 
             <p>Give the required permission to the script to be executed</p>
@@ -113,9 +113,10 @@ chmod +x PRJNA646773_fastq_download.sh
 
             <p>Execute the script that will download 39 Datasets in the current directory</p>
             <pre><code class="bash">./PRJNA646773_fastq_download.sh</code></pre>
-	<div class="tab-pane fade" id="shell-macos" role="tabpanel">
+        </div>
+        <div class="tab-pane fade" id="shell-macos" role="tabpanel">
             <p>Create a new directory "PRJNA646773" within "workshop" directory</p>
-            <pre><code class="bash">mkir workshop && cd workshop && mkdir PRJNA646773</code></pre>
+            <pre><code class="bash">mkdir workshop && cd workshop && mkdir PRJNA646773</code></pre>
 
             <p>Download "PRJNA646773_fastq_download.sh" bash script file</p>
             <pre><code class="bash">curl -L https://raw.githubusercontent.com/VirJenDB/2024-07-12-leipzig-viromics-workshop/f38c57fe435c149f8210d2e9c46cf1d34f85fd91/rawfiles/dataset/PRJNA646773_fastq_download.sh -o PRJNA646773_fastq_download.sh</code></pre>
@@ -129,7 +130,7 @@ chmod +x PRJNA646773_fastq_download.sh
     </div>
 </div>
 
-</div>
+
 <style>
 /* Style the tab */
 .tablink {
