@@ -77,31 +77,76 @@ chmod +x PRJNA646773_fastq_download.sh
 ```
 
 <details>
-<summary>⚠️ Code Examples</summary>
+<summary>⚠️ Code/summary>
 
-### Code Examples in R and Python
+<div class="tabs">
+  <button class="tablink" onclick="openTab(event, 'wgetcode')">wget</button>
+  <button class="tablink" onclick="openTab(event, 'curlcode')">curl</button>
+</div>
 
-<table>
-<tr>
-  <th>wget</th>
-  <th>curl</th>
-</tr>
-<tr>
-  <td>
-
+<div id="wgetcode" class="tabcontent">
 ```bash
 # Create a new directory "PRJNA646773" within "workshop" directory
 mkir workshop && cd workshop && mkdir PRJNA646773
 ```
-</td>
-<td>
+</div>
+<div id="curlode" class="tabcontent">
 ```bash
 # Execute the script that will download 39 Datasets in the current directory
 ./PRJNA646773_fastq_download.sh
 ```
-</td>
-</tr>
-</table>
+</div>
+<style>
+/* Style the tab */
+.tablink {
+  background-color: #f1f1f1;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tablink:hover {
+  background-color: #ddd;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-top: none;
+}
+
+/* Show the active tab content */
+.tabcontent.active {
+  display: block;
+}
+</style>
+<script>
+// Function to open the tab
+function openTab(evt, tabName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Set default tab to open
+document.addEventListener('DOMContentLoaded', (event) => {
+  document.querySelector('.tablink').click();
+});
+</script>
 </details>
 
 ### Step 2: Perform quality control using Fastp
