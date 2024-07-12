@@ -25,6 +25,12 @@ The raw sequencing reads were derived from the human faecal virome (BioProject P
  
 To download the dataset from a BioProject there are [multiple tools](https://www.ncbi.nlm.nih.gov/home/tools/) including Entrez Direct and SRA Toolkit that need to be installed on your system. Alternatively, we used [SRA Explorer](https://sra-explorer.info/#) online tool to find the list of FastQ files belonging to this BioProject within SRA FTP server. 
 
+Description
+The raw sequencing reads were derived from the human faecal virome. Total VLP DNA isolated from faecal samples provided by three donors was subjected to whole-genome shotgun metagenomic sequencing using Illumina HiSeq X Ten platform. In this study, we compared the use of PCR and PCR-free methods for sequence library construction to assess the impact of PCR amplification bias on the human faecal virome.
+Reads: [https://www.ebi.ac.uk/ena/browser/view/PRJEB47625](https://www.ebi.ac.uk/ena/browser/view/PRJEB47625)
+Assemblies: [https://zenodo.org/records/10650983](https://zenodo.org/records/10650983)
+Article: [https://www.microbiologyresearch.org/content/journal/mgen/10.1099/mgen.0.001236](https://www.microbiologyresearch.org/content/journal/mgen/10.1099/mgen.0.001236)
+
 
 > ## prerequisites
 > To successfully download the required files, you need to have either `wget` or `curl` installed on your system. These tools are essential for fetching files from the internet.
