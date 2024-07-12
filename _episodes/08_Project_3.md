@@ -11,6 +11,27 @@ keypoints:
 - "MaxBin2, CheckV"
 ---
 
+### Create abundance_counts file
+```
+# Index the contig file (conda install bioconda::bwa)
+bwa index PRJEB47625/illumina_sample_01_megahit.fa.gz
+
+# Align reads to contigs
+bwa mem PRJEB47625/illumina_sample_01_megahit.fa.gz PRJEB47625/ERR6797441_1.fastq.gz PRJEB47625/ERR6797441_2.fastq.gz > aligned_reads.sam
+
+# Convert SAM to BAM (conda install bioconda::samtools)
+samtools view -bS aligned_reads.sam > aligned_reads.bam
+
+# Sort BAM file
+samtools sort aligned_reads.bam -o sorted_reads.bam
+
+# Index BAM file
+samtools index sorted_reads.bam
+
+# Count reads mapped to each contig (conda install bioconda::bedtools)
+bedtools coverage -a PRJEB47625/illumina_sample_01_megahit.fa.gz -b sorted_reads.bam > abundance_counts.txt
+```
+
 ## 3. Bin virus genomes
 ### Tools: MaxBin2, CheckV
 
@@ -32,8 +53,7 @@ run_MaxBin.pl -contig PRJEB47625/illumina_sample_01_megahit.fa.gz -out bins_dire
 MaxBin2 will generate bins of contigs, each representing a putative genome, including viral genomes.
 
 ### Step 2: Evaluate bins using CheckV
-[CheckV](https://bitbucket.org/berkeleylab/checkv/src/master/) is used to assess the quality of viral genomes from metagenomic assemblies.
-
+[CheckV](https://bitbucket.org/berkeleylab/checkv/src/master/) is used to assess the quality of viral genomes from metagenomic assemblies. Conda installation command is `conda install bioconda::checkv`
 **Usage:**
 
 ```bash
