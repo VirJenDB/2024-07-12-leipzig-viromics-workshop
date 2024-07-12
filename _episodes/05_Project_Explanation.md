@@ -73,11 +73,19 @@ Questions
 How many viral contigs are there in the assembly?
 How many bins were found by the tool?
 How many high-quality bins do you find?
+What was the completeness of the bins?
 
 ## 4. Virus Identification
 ### Tool: geNomad
 
-- **geNomad**: Identify and annotate viral sequences within your assembled contigs, providing crucial insights into the viral components of your sample.
+- **geNomad**: Identify and annotate viral sequences
+
+How does Genomad work?
+- Strengths vs weaknesses
+
+Taxonomic annotation of genomes with Genomad
+- How many genomes are classified?
+- Describe the output
 
 ## Additional Considerations
 
