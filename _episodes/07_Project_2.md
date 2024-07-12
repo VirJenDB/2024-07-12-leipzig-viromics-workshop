@@ -163,6 +163,7 @@ kraken2-build --download-library viral --db kraken2_db
 ### Install with conda directly
 ```
 conda install bioconda::kraken2
+kraken2-build --download-taxonomy --db kraken2_db
 kraken2-build --download-library viral --db kraken2_db
 ```
 
