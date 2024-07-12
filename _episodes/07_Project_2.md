@@ -127,4 +127,25 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io
 sudo docker run hello-world
 ```
 
+### Create a Kraken2 Database
+```
+# Get back to the workshop folder
+cd workshop_day5
+
+# Download and install Kraken2
+wget https://github.com/DerrickWood/kraken2/archive/v2.1.2.tar.gz
+tar -xvzf v2.1.2.tar.gz
+cd kraken2-2.1.2
+./install_kraken2.sh .
+export PATH=$PATH:$PWD
+cd ..
+
+# Create a directory for the database
+mkdir -p kraken2_db
+cd kraken2_db
+
+# Download the standard Kraken2 database
+kraken2-build --standard --db kraken2_db
+```
+
 {% include links.md %}
