@@ -82,7 +82,10 @@ nextflow run nf-core/taxprofiler -profile test,YOURPROFILE --outdir nextflow
 execution of the pipeline required [multiple input files](https://nf-co.re/taxprofiler/1.0.1/docs/usage/) including samplesheet.csv and database.csv files.
 ```
 # Create samplesheet.csv by listing the fastq files processed by fastp
-echo "sample,fastq_1,fastq_2" > samplesheet.csv && for f in fastp_output/*_1.fastq.gz; do base=$(basename $f _1.fastq.gz); echo "$base,fastp_output/${base}_1.fastq.gz,fastp_output/${base}_2.fastq.gz"; done >> samplesheet.csv
+echo "sample,run_accession,instrument_platform,fastq_1,fastq_2,fasta\nERR6797441,run1,ILLUMINA,PRJEB47625/ERR6797441_1.fastq.gz,PRJEB47625/ERR6797441_2.fastq.gz," > samplesheet.csv
+
+echo -e "tool,db_name,db_path\nkraken2,kraken2,kraken2_db/kraken2_db/" > database.csv
+
 ```
 
 ---
