@@ -11,7 +11,13 @@ keypoints:
 - "MaxBin2, CheckV"
 ---
 
+## 3. Bin virus genomes
+### Tools: MaxBin2, CheckV
+
+In this section, we start with the [assembled contig file](https://zenodo.org/records/10650983) belonging to the same [project](https://www.biorxiv.org/content/10.1101/2023.11.24.568560v1) to save time and focus on binning and evaluation. By starting with a pre-assembled contig file, you streamline the process and focus on binning and quality evaluation, ensuring efficient and effective analysis of your viromics data.
+
 ### Create abundance_counts file
+First, we need an abundance_counts file to be used later in 
 ```
 # Index the contig file (conda install bioconda::bwa)
 bwa index PRJEB47625/illumina_sample_01_megahit.fa.gz
@@ -33,11 +39,6 @@ bedtools bamtobed -i sorted_reads.bam > intervals.bed
 # Count reads mapped to each contig (conda install bioconda::bedtools)
 bedtools coverage -a intervals.bed -b sorted_reads.bam > abundance_counts.txt
 ```
-
-## 3. Bin virus genomes
-### Tools: MaxBin2, CheckV
-
-In this section, we start with the [assembled contig file](https://zenodo.org/records/10650983) belonging to the same [project](https://www.biorxiv.org/content/10.1101/2023.11.24.568560v1) to save time and focus on binning and evaluation. By starting with a pre-assembled contig file, you streamline the process and focus on binning and quality evaluation, ensuring efficient and effective analysis of your viromics data.
 
 ### Step 1: Bin virus genomes from the assembly file using MaxBin2
 [MaxBin2](https://kbase.us/applist/apps/kb_maxbin/run_maxbin2/release) is a tool designed to bin metagenomic contigs into individual genomes, including viral genomes. Follow [website](https://github.com/assemblerflow/flowcraft/blob/master/docs/user/components/maxbin2.rst) instructions or use `conda install bioconda::maxbin2` to install maxbin2 via conda.
