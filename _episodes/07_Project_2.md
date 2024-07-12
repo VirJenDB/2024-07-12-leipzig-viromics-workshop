@@ -101,22 +101,30 @@ nextflow run nf-core/taxprofiler --input samplesheet.csv --databases database.cs
 
 This pipeline automates the process, running Kraken2 and other tools as part of a streamlined workflow.
 
-{% include hint.html hint=e.tips %}
 ---
-> Install Docker Engine on Ubuntu (Sudo privilege is required)
-> Update the Package Index
-> `sudo apt-get update`
-> Install Required Packages
-> `sudo apt-get install apt-transport-https ca-certificates curl gnupg lsb-release`
-> Add Docker’s Official GPG Key
-> `curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg`
-> Set Up the Repository
-> `echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null`
-> Update the Package Index Again
-> `sudo apt-get update`
-> Install the latest version of Docker Engine and containerd.io:
-> `sudo apt-get install docker-ce docker-ce-cli containerd.io`
-> Verify Docker Installation
-> `sudo docker run hello-world`
+
+### Install Docker Engine on Ubuntu if it is needed (Sudo privilege is required)
+```
+#Update the Package Index
+sudo apt-get update
+
+# Install Required Packages
+sudo apt-get install apt-transport-https ca-certificates curl gnupg lsb-release
+
+# Add Docker’s Official GPG Key
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+
+# Set Up the Repository
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+
+# Update the Package Index Again
+sudo apt-get update
+
+# Install the latest version of Docker Engine and containerd.io:
+sudo apt-get install docker-ce docker-ce-cli containerd.io
+
+#Verify Docker Installation
+sudo docker run hello-world
+```
 
 {% include links.md %}
