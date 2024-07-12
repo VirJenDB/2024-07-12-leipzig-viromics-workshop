@@ -71,7 +71,7 @@ To download the dataset from a BioProject there are [multiple tools](https://www
 > ```
 > conda create -n genomad -c conda-forge -c bioconda genomad
 > conda activate genomad
-> wget -c https://github.com/VirJenDB/2024-07-12-leipzig-viromics-workshop/blob/415a236fcbeb0823bbe9b84a936c945e182e4615/rawfiles/workshop-day5.yml -O workshop-day5.yml
+> wget -c "https://github.com/VirJenDB/2024-07-12-leipzig-viromics-workshop/blob/415a236fcbeb0823bbe9b84a936c945e182e4615/rawfiles/workshop-day5.yml" -O workshop-day5.yml
 > conda env create -f workshop-day5.yml
 > ```
 > 
