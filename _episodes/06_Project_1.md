@@ -181,11 +181,11 @@ In this step, we use Seqtk to create a smaller subset of the data for initial ex
 Find the latest Miniconda installer links for operation system from [anaconda website](https://docs.anaconda.com/miniconda/)
 ```
 # Download the file using curl or get
-wget -c https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda3/miniconda.sh
+wget -c https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh
 
-# If you change the address of miniconda3 folder from the home directory, make sure there is enough space in new location
-bash ~/miniconda3/miniconda.sh -p ~/miniconda3
-rm -rf ~/miniconda3/miniconda.sh
+# If you change the address of miniconda3 folder from the home directory, make sure there is enough space in the new location
+bash miniconda.sh -p ~/miniconda3
+rm -rf miniconda.sh
 conda init
 ```
 
