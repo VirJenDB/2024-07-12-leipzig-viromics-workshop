@@ -68,7 +68,12 @@ To download the dataset from a BioProject there are [multiple tools](https://www
 > We recommend creating two conda environments including most of the tools we will use in this workshop.
 > To use them, first install conda (described at the bottom of the page). Then download YML files and create the environment using them.
 >
-> https://github.com/VirJenDB/2024-07-12-leipzig-viromics-workshop/blob/77e4b3af934affe1ccc6b28e04d3397fe13e390a/rawfiles/genomad.yml
+> ```
+> wget -c https://github.com/VirJenDB/2024-07-12-leipzig-viromics-workshop/blob/77e4b3af934affe1ccc6b28e04d3397fe13e390a/rawfiles/genomad.yml
+> wget -c https://github.com/VirJenDB/2024-07-12-leipzig-viromics-workshop/blob/415a236fcbeb0823bbe9b84a936c945e182e4615/rawfiles/workshop-day5.yml
+> conda env create -f genomad.yml
+> conda env create -f workshop-day5.yml
+> ```
 > 
 > Ensure that you have one of these tools installed before proceeding with the download.
 {: .discussion}
