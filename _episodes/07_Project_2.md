@@ -33,8 +33,7 @@ source "$HOME/.sdkman/bin/sdkman-init.sh"
 sdk install java 11.0.11.hs-adpt
 
 curl -s https://get.nextflow.io | bash
-mv nextflow $HOME/bin/
-export PATH=$HOME/bin:$PATH
+mv nextflow /usr/local/bin/
 ```
 
 If your user is not a sudoer, try a users local bin folder and add it to the PATH variable
