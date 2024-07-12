@@ -14,7 +14,7 @@ keypoints:
 ## 4. Virus Identification and annotation by geNomad
 ### Tools: geNomad
 
-[geNomad](https://portal.nersc.gov/genomad/index.html) is a tool for identifying and annotating viral sequences in metagenomic data.
+[geNomad](https://portal.nersc.gov/genomad/index.html) is a tool that identifies virus and plasmid genomes from nucleotide sequences. It provides state-of-the-art classification performance and can be used to quickly find mobile genetic elements from genomes, metagenomes, or metatranscriptomes.
 
 ### Installation
 using conda
