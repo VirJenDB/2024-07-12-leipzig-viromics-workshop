@@ -28,8 +28,10 @@ samtools sort aligned_reads.bam -o sorted_reads.bam
 # Index BAM file
 samtools index sorted_reads.bam
 
+bedtools bamtobed -i sorted_reads.bam > intervals.bed
+
 # Count reads mapped to each contig (conda install bioconda::bedtools)
-bedtools coverage -a PRJEB47625/illumina_sample_01_megahit.fa.gz -b sorted_reads.bam > abundance_counts.txt
+bedtools coverage -a intervals.bed -b sorted_reads.bam > abundance_counts.txt
 ```
 
 ## 3. Bin virus genomes
