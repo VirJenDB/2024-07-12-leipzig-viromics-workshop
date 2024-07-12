@@ -11,7 +11,7 @@ keypoints:
 - "MaxBin2, CheckV"
 ---
 
-## 1. 
+## 3. Bin virus genomes
 ### Tools: MaxBin2, CheckV
 
 In this section, we start with the [assembled contig file](https://zenodo.org/records/10650983) belonging to the same [project](https://www.biorxiv.org/content/10.1101/2023.11.24.568560v1) to save time and focus on binning and evaluation. By starting with a pre-assembled contig file, you streamline the process and focus on binning and quality evaluation, ensuring efficient and effective analysis of your viromics data.
