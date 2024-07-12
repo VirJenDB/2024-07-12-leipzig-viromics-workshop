@@ -169,8 +169,9 @@ kraken2-build --download-library viral --db kraken2_db
 
 ### download the ready kraken database for viruses
 ```
-wget  -c "https://genome-idx.s3.amazonaws.com/kraken/k2_viral_20240605.tar.gz" -o kraken2_db.tar.gz
-tar -xvzf  kraken2_db.tar.gz
+wget  -c "https://genome-idx.s3.amazonaws.com/kraken/k2_viral_20240605.tar.gz"
+mkdir kraken_db
+tar -xvzf k2_viral_20240605.tar.gz -C kraken_db
 ```
 
 {% include links.md %}
