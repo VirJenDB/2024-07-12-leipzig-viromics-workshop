@@ -35,7 +35,7 @@ docker run -ti --rm -v "$(pwd):/app" antoniopcamargo/genomad end-to-end input.fn
 
 ```bash
 # Run geNomad for virus identification
-geNomad identify --input PRJEB47625/illumina_sample_01_megahit.fa.gz --output genomad_output --threads 4
+genomad identify --input PRJEB47625/illumina_sample_01_megahit.fa.gz --output genomad_output --threads 4
 ```
 
 geNomad identifies viral sequences within the assembled contigs and provides annotations that are crucial for understanding the viral components of your virome.
