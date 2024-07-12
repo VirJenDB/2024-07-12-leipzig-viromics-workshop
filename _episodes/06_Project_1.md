@@ -165,4 +165,18 @@ seqtk sample -s100 fastp_output/ERR6797441_2.fastq.gz 1000 > read2.fastq
 
 In this step, we use Seqtk to create a smaller subset of the data for initial exploration, which helps in quickly assessing the quality and content of the dataset without processing the entire file.
 
+---
+
+### Conda installation
+Find the latest Miniconda installer links for operation system from [anaconda website](https://docs.anaconda.com/miniconda/)
+```
+# Download the file using curl or get
+wget -c https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda3/miniconda.sh
+
+# If you change the address of miniconda3 folder from the home directory, make sure there is enough space in new location
+bash ~/miniconda3/miniconda.sh -p ~/miniconda3
+rm -rf ~/miniconda3/miniconda.sh
+conda init
+```
+
 {% include links.md %}
