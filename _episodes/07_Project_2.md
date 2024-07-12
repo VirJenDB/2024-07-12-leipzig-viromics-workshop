@@ -94,9 +94,10 @@ echo "sample,fastq_1,fastq_2" > samplesheet.csv && for f in fastp_output/*_1.fas
 | `-profile` `<profile>`  | Specifies the execution profile (e.g., `docker`, `singularity`, `conda`, etc.).              |
 
 ```
-# Run the nf-core:taxprofiler pipeline
-nextflow run nf-core/taxprofiler --input samplesheet.csv --databases database.csv --outdir <OUTDIR> --run_<TOOL1> --run_<TOOL1> -profile <docker/singularity/podman/shifter/charliecloud/conda/institute>
 
+
+# Run the nf-core:taxprofiler pipeline
+nextflow run nf-core/taxprofiler --input samplesheet.csv --databases database.csv --outdir results --run_kraken2 -profile docker
 ```
 
 This pipeline automates the process, running Kraken2 and other tools as part of a streamlined workflow.
