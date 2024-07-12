@@ -156,8 +156,14 @@ mkdir -p kraken2_db
 cd kraken2_db
 
 # Download RefSeq viruses as a kraken2 database
-kraken2-build viral --db kraken2_db
+kraken2-build --download-library viral --db kraken2_db
 
+```
+
+### Install with conda directly
+```
+conda install bioconda::kraken2
+kraken2-build --download-library viral --db kraken2_db
 ```
 
 {% include links.md %}
