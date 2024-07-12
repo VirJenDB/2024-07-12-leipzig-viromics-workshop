@@ -57,7 +57,7 @@ Test the installation of Nextflow using `nextflow -version`
 Create a new conda environment and install nextflow:
 ```
 conda create -n workshop_nextflow -c bioconda nextflow 
-conda activate workshop_nextflow`
+conda activate workshop_nextflow
 ```
 
 For other installation methods, please check [nf-core website](https://nf-co.re/taxprofiler/1.0.1/)
