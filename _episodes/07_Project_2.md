@@ -8,6 +8,8 @@ objectives:
 - "Install Fastp, kraken2 and use them"
 keypoints:
 - "Fastp, kraken2 using nf-core:taxprofiler"
+tips:
+- yeseri tip
 ---
 
 ## 2. Taxonomic Profiling of One Virome
