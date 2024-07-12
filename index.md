@@ -19,7 +19,7 @@ permalink: index.html  # Is the only page that doesn't follow the pattern /:path
 
 **Who:** The course is aimed at graduate students and other researchers with little to no bioinformatics experience. *You don't need to have any previous knowledge of the tools that will be presented at the workshop.*
 
-**Where:** Permoserstraße 15, 04318 Leipzig. Get directions with [Google Maps](https://www.google.com/maps/place/Helmholtz+Centre+for+Environmental+Research+-+UFZ/@51.3517518,12.4283362,17z/data=!3m1!4b1!4m6!3m5!1s0x47a6f87d03650915:0xccdff15106b0098e!8m2!3d51.3517518!4d12.4309111!16s%2Fm%2F049t2kx?entry=ttu).
+**Where:** Helmholtz Centre for Environmental Research (Permoserstraße 15, 04318 Leipzig). Get directions with [Google Maps](https://www.google.com/maps/place/Permoserstra%C3%9Fe+15,+04318+Leipzig/@51.3516374,12.429515,17z/data=!3m1!4b1!4m6!3m5!1s0x47a6f88787be1861:0x165229196fdd02c7!8m2!3d51.3516374!4d12.4320899!16s%2Fg%2F11bw40znh0?entry=ttu).
 
 **When:** 12 July 2024; 9:45 AM - 5:00 PM CEST [Add to your Google Calendar](https://calendar.google.com/).
 
