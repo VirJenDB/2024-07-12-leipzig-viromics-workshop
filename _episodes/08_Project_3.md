@@ -50,7 +50,7 @@ cd workshop_day5
 wget -c https://zenodo.org/records/10650983/files/illumina_sample_01_megahit.fa.gz -O PRJEB47625/illumina_sample_01_megahit.fa.gz
 
 # Run MaxBin2 for binning
-run_MaxBin.pl -contig PRJEB47625/illumina_sample_01_megahit.fa.gz -out bins_directory
+run_MaxBin.pl -contig PRJEB47625/illumina_sample_01_megahit.fa.gz -abund abundance_counts.txt -out bins_directory
 ```
 
 MaxBin2 will generate bins of contigs, each representing a putative genome, including viral genomes.
