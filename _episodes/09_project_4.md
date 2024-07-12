@@ -28,7 +28,7 @@ using docker
 ```
 docker pull antoniopcamargo/genomad
 docker run -ti --rm -v "$(pwd):/app" antoniopcamargo/genomad download-database .
-docker run -ti --rm -v "$(pwd):/app" antoniopcamargo/genomad end-to-end input.fna output genomad_db
+docker run -ti --rm -v "$(pwd):/app" antoniopcamargo/genomad end-to-end PRJEB47625/illumina_sample_01_megahit.fa.gz output genomad_db
 ```
 
 **Usage:**
