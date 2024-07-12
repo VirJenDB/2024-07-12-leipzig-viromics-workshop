@@ -16,6 +16,21 @@ keypoints:
 
 [geNomad](https://portal.nersc.gov/genomad/index.html) is a tool for identifying and annotating viral sequences in metagenomic data.
 
+### Installation
+using conda
+```
+conda create -n genomad -c conda-forge -c bioconda genomad
+conda activate genomad
+genomad download-database .
+```
+
+using docker
+```
+docker pull antoniopcamargo/genomad
+docker run -ti --rm -v "$(pwd):/app" antoniopcamargo/genomad download-database .
+docker run -ti --rm -v "$(pwd):/app" antoniopcamargo/genomad end-to-end input.fna output genomad_db
+```
+
 **Usage:**
 
 ```bash
