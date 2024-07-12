@@ -2,13 +2,13 @@
   Display key points for an episode.
 {% endcomment %}
 
-{% if page.keypoints == nil %}
+{% if page.tips == nil %}
 {% assign episode_keypoints = include.episode_keypoints %}
 {% else %}
-{% assign episode_keypoints = page.keypoints %}
+{% assign episode_keypoints = page.tips %}
 {% endif %}
 
-<blockquote class="keypoints">
+<blockquote class="tips">
   <h2>Key Points</h2>
   <ul>
     {% for keypoint in episode_keypoints %}
