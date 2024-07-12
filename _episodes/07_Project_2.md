@@ -24,7 +24,7 @@ tips:
 Install [Nextflow](https://www.nextflow.io/docs/latest/install.html#installation) from the  (>=22.10.1).
 
 **Method 2: (recommended)**
-Install [Docker Engine](https://docs.docker.com/engine/install/) using docker.
+Install nextflow using [Docker Engine](https://docs.docker.com/engine/install/). The Docker engine installation procedure is described at the end of the page.
 
 ```
 curl -s https://get.nextflow.io | bash
@@ -138,7 +138,7 @@ tar -xvzf v2.1.2.tar.gz
 cd kraken2-2.1.2
 ./install_kraken2.sh .
 export PATH=$PATH:$PWD
-cd ..
+cd .. && rm v2.1.2.tar.gz
 
 # Create a directory for the database
 mkdir -p kraken2_db
