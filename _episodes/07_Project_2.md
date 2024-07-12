@@ -27,8 +27,14 @@ Install [Nextflow](https://www.nextflow.io/docs/latest/install.html#installation
 Install nextflow using [Docker Engine](https://docs.docker.com/engine/install/). The Docker engine installation procedure is described at the end of the page.
 
 ```
+# Install Java as a dependency 
+curl -s "https://get.sdkman.io" | bash
+source "$HOME/.sdkman/bin/sdkman-init.sh"
+sdk install java 11.0.11.hs-adpt
+
 curl -s https://get.nextflow.io | bash
-sudo mv nextflow /usr/local/bin/
+mv nextflow $HOME/bin/
+export PATH=$HOME/bin:$PATH
 ```
 
 If your user is not a sudoer, try a users local bin folder and add it to the PATH variable
