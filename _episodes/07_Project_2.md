@@ -101,7 +101,7 @@ nextflow run nf-core/taxprofiler --input samplesheet.csv --databases database.cs
 
 This pipeline automates the process, running Kraken2 and other tools as part of a streamlined workflow.
 
-{% include episode_keypoints.html episode_keypoints=e.keypoints %}
+{% include hint.html hint=e.tips %}
 ---
 > Install Docker Engine on Ubuntu (Sudo privilege is required)
 > Update the Package Index
