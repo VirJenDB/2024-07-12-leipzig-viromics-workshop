@@ -33,6 +33,15 @@ docker run -ti --rm -v "$(pwd):/app" antoniopcamargo/genomad end-to-end PRJEB476
 
 **Usage:**
 
+## Pipeline Options
+
+| Option       | Description                                           |
+|--------------|-------------------------------------------------------|
+| end-to-end   | Executes the full pipeline                            |
+| --cleanup    | Force geNomad to delete intermediate files            |
+| --splits 8   | To make it possible to run this example in a notebook |
+
+
 ```bash
 # Run the full geNomad pipeline (end-to-end command), taking a nucleotide FASTA file (illumina_sample_01_megahit.fa.gz) and the database (genomad_db) as input and produce output in genomad_output
 genomad end-to-end --cleanup --splits 8 PRJEB47625/illumina_sample_01_megahit.fa.gz genomad_output genomad_db
