@@ -107,6 +107,8 @@ nextflow run nf-core/taxprofiler --input samplesheet.csv --databases database.cs
 
 This pipeline automates the process, running Kraken2 and other tools as part of a streamlined workflow.
 
+after the completion of the pipeline execution, the nextflow_output folder will contain fastqc, multiqc, and pipeline_info folders. 
+
 ---
 
 ### Install Docker Engine on Ubuntu if it is needed (Sudo privilege is required)
