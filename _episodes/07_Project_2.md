@@ -150,8 +150,13 @@ cd .. && rm v2.1.2.tar.gz
 mkdir -p kraken2_db
 cd kraken2_db
 
+# This is too big, see next step
 # Download the standard Kraken2 database
 kraken2-build --standard --db kraken2_db
+
+# Download RefSeq viruses as a kraken2 database
+kraken2-build viral --db kraken2_db
+
 ```
 
 {% include links.md %}
